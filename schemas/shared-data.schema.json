@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Graveyard Keeper shared authoring data",
+  "description": "The authoritative field-level validation is implemented by validate_data.py.",
+  "type": "object",
+  "additionalProperties": {"type": "object"}
+}

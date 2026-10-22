@@ -1,23 +1,19 @@
 # Graveyard Keeper Archipelago Data
 
-This repository is the versioned data boundary between the Graveyard Keeper
-APWorld and the GraveyardKeepelago client.
+This repository owns the shared source data consumed directly by both the
+Graveyard Keeper APWorld and the GraveyardKeepelago client.
 
-## Contents
+- `items/**/*.json`: stable AP item definitions;
+- `item_grants.json`: the in-game effect for every received item;
+- `locations.json`: explicitly authored AP reward locations;
+- `quest_reward_triggers.json`: client-side checks for quest rewards;
+- `manifest.json`: the explicit compatibility `data_version`.
 
-- `contract/graveyard_keeper_contract.json`: generated public item and location contract;
-- `schemas/client-contract.schema.json`: formal JSON Schema for the contract;
-- `validate_contract.py`: dependency-free semantic and content-hash validator;
-- `DATA_CLASSIFICATION.md`: ownership rules for shared and private data.
-
-The fragmented authoring data remains in the APWorld. Do not edit the generated
-contract by hand. Generate it from the APWorld and then validate it:
+There is no generated aggregate file and no content hash. Git pins the exact
+data revision used for a build. `data_version` is bumped only when a data change
+requires coordinated consumer behavior. Validate changes with:
 
 ```powershell
-.venv\Scripts\python.exe worlds/graveyard_keeper/tools/build_client_contract.py `
-  --output external/graveyard_keeper_data/contract/graveyard_keeper_contract.json
-python external/graveyard_keeper_data/validate_contract.py
+python validate_data.py
+python -m unittest discover -s tests -t .
 ```
-
-The validator uses only the Python standard library. Consumers must reject an
-unsupported `schema_version` and a mismatching `content_hash`.

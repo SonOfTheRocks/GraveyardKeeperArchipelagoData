@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Graveyard Keeper shared data manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["data_version"],
+  "properties": {"data_version": {"type": "integer", "minimum": 1}}
+}

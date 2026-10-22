@@ -1,4 +1,4 @@
-name: Validate data contract
+name: Validate shared data
 
 on:
   push:
@@ -12,5 +12,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: python validate_contract.py
+      - run: python validate_data.py
       - run: python -m unittest discover -s tests -t .
