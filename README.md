@@ -10,10 +10,15 @@ Graveyard Keeper APWorld and the GraveyardKeepelago client.
 - `manifest.json`: the explicit compatibility `data_version`.
 
 There is no generated aggregate file and no content hash. Git pins the exact
-data revision used for a build. `data_version` is bumped only when a data change
-requires coordinated consumer behavior. Validate changes with:
+data revision used for a build. Because APWorld and client compare
+`data_version` exactly, every change to the runtime data files must bump it.
+Changes limited to documentation, schemas, validators, or tests do not.
+Validate changes with:
 
 ```powershell
 python validate_data.py
 python -m unittest discover -s tests -t .
 ```
+
+Pull requests compare against their base branch and reject runtime data changes
+that do not increase `data_version`.
