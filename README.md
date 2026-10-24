@@ -19,6 +19,11 @@ graph-tool traceability. `runtime_node_id` is the corresponding one-based
 FlowCanvas node index used by the game client; the two identifiers are not
 interchangeable.
 
+Craft triggers distinguish completing a recipe (`craft_completion_reward`)
+from receiving a recipe or blueprint (`craft_unlock_reward`). The distinction
+prevents recipe access from completing a location that requires actually
+crafting its output.
+
 Validate changes with:
 
 ```powershell

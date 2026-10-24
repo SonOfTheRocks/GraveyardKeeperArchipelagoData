@@ -28,6 +28,15 @@ class TestSharedData(unittest.TestCase):
         self.assertEqual(300, len(flow_triggers))
         self.assertTrue(all(trigger["runtime_node_id"] > 0 for trigger in flow_triggers))
 
+    def test_craft_completion_and_unlock_triggers_are_distinct(self):
+        data = load_and_validate()
+
+        flesh = data["triggers"]["LOCATION_TUTORIAL_REWARD_GET_FIRST_FLESH"]
+        donkey = data["triggers"]["LOCATION_DONKEY_MEET"]
+
+        self.assertTrue(all(trigger["type"] == "craft_completion_reward" for trigger in flesh))
+        self.assertEqual("craft_unlock_reward", donkey[0]["type"])
+
 
 if __name__ == "__main__":
     unittest.main()

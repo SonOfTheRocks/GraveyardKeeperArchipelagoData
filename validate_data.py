@@ -20,7 +20,9 @@ GRANT_FIELDS = {
 TRIGGER_FIELDS = {
     "flow_quest_reward": ({"graph", "node_id", "runtime_node_id"}, {"answer_index"}),
     "flow_relation_reward": ({"graph", "node_id", "runtime_node_id"}, {"answer_index"}),
-    "craft_reward": ({"craft_id"}, set()), "technology_reward": ({"technology_id"}, set()),
+    "craft_completion_reward": ({"craft_id"}, set()),
+    "craft_unlock_reward": ({"craft_id"}, set()),
+    "technology_reward": ({"technology_id"}, set()),
     "world_item_reward": ({"item_id"}, set()),
 }
 

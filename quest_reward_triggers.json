@@ -17,11 +17,11 @@
   ],
   "LOCATION_TUTORIAL_REWARD_GET_FIRST_FLESH": [
     {
-      "type": "craft_reward",
+      "type": "craft_completion_reward",
       "craft_id": "ex:mf_preparation_1:flesh"
     },
     {
-      "type": "craft_reward",
+      "type": "craft_completion_reward",
       "craft_id": "ex:mf_preparation_2:flesh"
     }
   ],
@@ -33,7 +33,7 @@
   ],
   "LOCATION_TUTORIAL_REWARD_TALK_TO_BISHOP_2": [
     {
-      "type": "craft_reward",
+      "type": "craft_unlock_reward",
       "craft_id": "keeper_room_builddesk:p:keeper_room_picture_4"
     }
   ],
@@ -43,6 +43,12 @@
       "graph": "donat_box",
       "node_id": "23",
       "runtime_node_id": 10
+    }
+  ],
+  "LOCATION_DONKEY_MEET": [
+    {
+      "type": "craft_unlock_reward",
+      "craft_id": "keeper_room_builddesk:p:keeper_room_picture_7"
     }
   ],
   "LOCATION_ASTROLOGER_REWARD_GET_ASTROLOGER_SKULL": [
@@ -2104,7 +2110,7 @@
       "answer_index": 5
     },
     {
-      "type": "craft_reward",
+      "type": "craft_unlock_reward",
       "craft_id": "souls_builddesk::soul_healing_for_human"
     }
   ],
