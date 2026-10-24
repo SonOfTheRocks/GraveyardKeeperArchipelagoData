@@ -13,6 +13,12 @@ There is no generated aggregate file and no content hash. Git pins the exact
 data revision used for a build. Because APWorld and client compare
 `data_version` exactly, every change to the runtime data files must bump it.
 Changes limited to documentation, schemas, validators, or tests do not.
+
+Flow triggers retain the JSON export reference as `node_id` for analysis and
+graph-tool traceability. `runtime_node_id` is the corresponding one-based
+FlowCanvas node index used by the game client; the two identifiers are not
+interchangeable.
+
 Validate changes with:
 
 ```powershell

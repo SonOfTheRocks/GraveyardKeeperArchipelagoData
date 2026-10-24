@@ -18,8 +18,8 @@ GRANT_FIELDS = {
     "flow_script": {"script_id"},
 }
 TRIGGER_FIELDS = {
-    "flow_quest_reward": ({"graph", "node_id"}, {"answer_index"}),
-    "flow_relation_reward": ({"graph", "node_id"}, {"answer_index"}),
+    "flow_quest_reward": ({"graph", "node_id", "runtime_node_id"}, {"answer_index"}),
+    "flow_relation_reward": ({"graph", "node_id", "runtime_node_id"}, {"answer_index"}),
     "craft_reward": ({"craft_id"}, set()), "technology_reward": ({"technology_id"}, set()),
     "world_item_reward": ({"item_id"}, set()),
 }
@@ -132,8 +132,11 @@ def load_and_validate(root: Path = ROOT) -> dict[str, Any]:
             _require(trigger_type in TRIGGER_FIELDS, f"{context}: unsupported type {trigger_type!r}")
             required, optional = TRIGGER_FIELDS[trigger_type]
             _require({"type"} | required <= set(trigger) <= {"type"} | required | optional, f"{context}: invalid fields")
-            for field in required:
+            for field in required - {"runtime_node_id"}:
                 _string(trigger[field], f"{context}.{field}")
+            if "runtime_node_id" in trigger:
+                _require(isinstance(trigger["runtime_node_id"], int) and trigger["runtime_node_id"] > 0,
+                         f"{context}.runtime_node_id: expected a positive integer")
             if "answer_index" in trigger:
                 _require(isinstance(trigger["answer_index"], int) and trigger["answer_index"] >= 0, f"{context}.answer_index: expected a non-negative integer")
             serialized = json.dumps(trigger, sort_keys=True, separators=(",", ":"))
