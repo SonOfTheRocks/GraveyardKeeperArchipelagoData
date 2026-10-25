@@ -25,8 +25,16 @@ class TestSharedData(unittest.TestCase):
             if trigger["type"].startswith("flow_")
         ]
 
-        self.assertEqual(300, len(flow_triggers))
+        self.assertEqual(299, len(flow_triggers))
         self.assertTrue(all(trigger["runtime_node_id"] > 0 for trigger in flow_triggers))
+
+    def test_entering_morgue_uses_the_automatic_first_slice_technology(self):
+        data = load_and_validate()
+
+        self.assertEqual(
+            [{"type": "technology_reward", "technology_id": "First slice"}],
+            data["triggers"]["LOCATION_TUTORIAL_REWARD_ENTER_MORGUE_WITH_CORPSE"],
+        )
 
     def test_craft_completion_and_unlock_triggers_are_distinct(self):
         data = load_and_validate()

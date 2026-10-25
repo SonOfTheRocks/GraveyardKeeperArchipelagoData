@@ -9,10 +9,8 @@
   ],
   "LOCATION_TUTORIAL_REWARD_ENTER_MORGUE_WITH_CORPSE": [
     {
-      "type": "flow_quest_reward",
-      "graph": "autopsi_enter",
-      "node_id": "18",
-      "runtime_node_id": 9
+      "type": "technology_reward",
+      "technology_id": "First slice"
     }
   ],
   "LOCATION_TUTORIAL_REWARD_GET_FIRST_FLESH": [
