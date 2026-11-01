@@ -127,7 +127,7 @@ def load_and_validate(root: Path = ROOT) -> dict[str, Any]:
     for key, grant in grants.items():
         if grant["type"] == "trap":
             _require(items[key]["classification"] == "TRAP", f"{key}: trap grants require TRAP classification")
-            _require(grant["trap_id"] in {"monsters", "bats", "green_slimes"}, f"{key}: unsupported trap_id")
+            _require(grant["trap_id"] in {"bats", "green_slimes"}, f"{key}: unsupported trap_id")
         if items[key]["classification"] == "TRAP":
             _require(grant["type"] == "trap", f"{key}: TRAP items require a trap grant")
 

@@ -31,13 +31,13 @@ for seed-specific presentation; item grants, names and stage order are unchanged
 ## Traps and stable IDs
 
 Trap items declare `TRAP`, an explicit positive `id`, and a `trap` grant. Currently
-supported IDs are `bats` and `green_slimes`; `monsters` remains supported only for
-the reserved old item/queue format. `Bats Trap` reserves 488, `Green Slime Trap`
-reserves 489, and the old `Monsters Trap` retains 487. Explicit IDs cannot overlap the legacy IDs or
+supported IDs are `bats` and `green_slimes`. `Bats Trap` uses 488 and `Green Slime Trap`
+uses 489. The general random trap was removed before the first release, with no
+compatibility path or ID reservation. Explicit IDs cannot overlap the legacy IDs or
 each other. The existing 486 items retain their historical implicit IDs;
 explicit-ID additions do not advance the legacy counter.
 
 Trap definitions are excluded from the ordinary declared pool. After balancing
 the pool, the APWorld replaces a configured percentage of filler copies with
-traps, selected using their relative per-player weights. The old random trap is
-never generated. Useful and progression copies remain available.
+traps, selected using their relative per-player weights. Useful and progression
+copies remain available.

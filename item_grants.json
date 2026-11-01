@@ -3221,10 +3221,6 @@
       "soul_sins_1"
     ]
   },
-  "ITEM_MONSTERS_TRAP": {
-    "type": "trap",
-    "trap_id": "monsters"
-  },
   "ITEM_BATS_TRAP": {
     "type": "trap",
     "trap_id": "bats"
