@@ -2,11 +2,7 @@
   "First slice": {
     "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/FIRST_SLICE",
     "dlc": "BASE_GAME",
-    "locations": [
-      "First Slice - Unlock 1",
-      "First Slice - Unlock 2",
-      "First Slice - Unlock 3"
-    ],
+    "locations": [],
     "quest_reward": "Tutorial - Enter Morgue with Corpse",
     "parents": []
   },
@@ -147,9 +143,7 @@
     "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/ALCHEMISTS_BAG",
     "dlc": "BASE_GAME",
     "locations": [
-      "Alchemists Bag - Unlock 1",
-      "Alchemists Bag - Unlock 2",
-      "Alchemists Bag - Unlock 3"
+      "Alchemists Bag - Unlock 1"
     ],
     "recipe_item": "recipe_bag_alchemy",
     "parents": []
@@ -264,9 +258,7 @@
     "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/FARMERS_BAG",
     "dlc": "BASE_GAME",
     "locations": [
-      "Farmers Bag - Unlock 1",
-      "Farmers Bag - Unlock 2",
-      "Farmers Bag - Unlock 3"
+      "Farmers Bag - Unlock 1"
     ],
     "recipe_item": "recipe_bag_farming",
     "parents": []
@@ -287,9 +279,7 @@
     "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/FISHERMANS_BAG",
     "dlc": "BASE_GAME",
     "locations": [
-      "Fishermans Bag - Unlock 1",
-      "Fishermans Bag - Unlock 2",
-      "Fishermans Bag - Unlock 3"
+      "Fishermans Bag - Unlock 1"
     ],
     "recipe_item": "recipe_bag_fishing",
     "parents": []
@@ -298,9 +288,7 @@
     "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/TOOL_BAG",
     "dlc": "BASE_GAME",
     "locations": [
-      "Tool Bag - Unlock 1",
-      "Tool Bag - Unlock 2",
-      "Tool Bag - Unlock 3"
+      "Tool Bag - Unlock 1"
     ],
     "recipe_item": "recipe_bag_tools",
     "parents": []
@@ -309,9 +297,7 @@
     "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/UNIVERSAL_BAG",
     "dlc": "BASE_GAME",
     "locations": [
-      "Universal Bag - Unlock 1",
-      "Universal Bag - Unlock 2",
-      "Universal Bag - Unlock 3"
+      "Universal Bag - Unlock 1"
     ],
     "recipe_item": "recipe_bag_universal",
     "parents": []
@@ -320,9 +306,7 @@
     "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/POTION_BAG",
     "dlc": "BASE_GAME",
     "locations": [
-      "Potion Bag - Unlock 1",
-      "Potion Bag - Unlock 2",
-      "Potion Bag - Unlock 3"
+      "Potion Bag - Unlock 1"
     ],
     "recipe_item": "recipe_bag_potions",
     "parents": []
@@ -331,9 +315,7 @@
     "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/BUILDERS_BAG",
     "dlc": "BASE_GAME",
     "locations": [
-      "Builders Bag - Unlock 1",
-      "Builders Bag - Unlock 2",
-      "Builders Bag - Unlock 3"
+      "Builders Bag - Unlock 1"
     ],
     "recipe_item": "recipe_bag_builder",
     "parents": []
@@ -342,9 +324,7 @@
     "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/FOOD_BAG",
     "dlc": "BASE_GAME",
     "locations": [
-      "Food Bag - Unlock 1",
-      "Food Bag - Unlock 2",
-      "Food Bag - Unlock 3"
+      "Food Bag - Unlock 1"
     ],
     "recipe_item": "recipe_bag_food",
     "parents": []
@@ -353,9 +333,7 @@
     "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/BIG_UNIVERSAL_BAG",
     "dlc": "BASE_GAME",
     "locations": [
-      "Big Universal Bag - Unlock 1",
-      "Big Universal Bag - Unlock 2",
-      "Big Universal Bag - Unlock 3"
+      "Big Universal Bag - Unlock 1"
     ],
     "recipe_item": "recipe_bag_universal_big",
     "parents": []
@@ -373,11 +351,7 @@
   "Grave plate": {
     "region": "REGION_TECH_TREE_THEOLOGY/HUMBLE_MARKER",
     "dlc": "BASE_GAME",
-    "locations": [
-      "Humble Marker - Unlock 1",
-      "Humble Marker - Unlock 2",
-      "Humble Marker - Unlock 3"
-    ],
+    "locations": [],
     "quest_reward": "Tutorial - Talk to Bishop (1)",
     "parents": []
   },
@@ -626,9 +600,7 @@
     "region": "REGION_TECH_TREE_THEOLOGY/ADVANCED_GRAVESTONES",
     "dlc": "BASE_GAME",
     "locations": [
-      "Advanced Gravestones - Unlock 1",
-      "Advanced Gravestones - Unlock 2",
-      "Advanced Gravestones - Unlock 3"
+      "Advanced Gravestones - Unlock 1"
     ],
     "recipe_item": "recipe_advanced_gravestones",
     "parents": []
@@ -661,9 +633,7 @@
     "region": "REGION_TECH_TREE_THEOLOGY/ADVANCED_GRAVESTONES_2",
     "dlc": "BASE_GAME",
     "locations": [
-      "Advanced Gravestones 2 - Unlock 1",
-      "Advanced Gravestones 2 - Unlock 2",
-      "Advanced Gravestones 2 - Unlock 3"
+      "Advanced Gravestones 2 - Unlock 1"
     ],
     "recipe_item": "recipe_advanced_gravestones_2",
     "parents": []
@@ -672,9 +642,7 @@
     "region": "REGION_TECH_TREE_THEOLOGY/STONE_STATUES",
     "dlc": "BASE_GAME",
     "locations": [
-      "Stone Statues - Unlock 1",
-      "Stone Statues - Unlock 2",
-      "Stone Statues - Unlock 3"
+      "Stone Statues - Unlock 1"
     ],
     "recipe_item": "recipe_stone_statues",
     "parents": []
@@ -683,9 +651,7 @@
     "region": "REGION_TECH_TREE_THEOLOGY/MARBLE_STATUES",
     "dlc": "BASE_GAME",
     "locations": [
-      "Marble Statues - Unlock 1",
-      "Marble Statues - Unlock 2",
-      "Marble Statues - Unlock 3"
+      "Marble Statues - Unlock 1"
     ],
     "recipe_item": "recipe_marble_statues",
     "parents": []
@@ -694,9 +660,7 @@
     "region": "REGION_TECH_TREE_THEOLOGY/MARBLE_FENCES",
     "dlc": "BASE_GAME",
     "locations": [
-      "Marble Fences - Unlock 1",
-      "Marble Fences - Unlock 2",
-      "Marble Fences - Unlock 3"
+      "Marble Fences - Unlock 1"
     ],
     "recipe_item": "recipe_marble_fences",
     "parents": []
@@ -1143,11 +1107,7 @@
   "Iron": {
     "region": "REGION_TECH_TREE_SMITHING/IRON",
     "dlc": "BASE_GAME",
-    "locations": [
-      "Iron - Unlock 1",
-      "Iron - Unlock 2",
-      "Iron - Unlock 3"
-    ],
+    "locations": [],
     "quest_reward": "Krezvold Reward - Ask about metal ore",
     "parents": []
   },
@@ -1716,9 +1676,7 @@
     "region": "REGION_TECH_TREE_COOKERY/SIMPLE_AND_TASTY",
     "dlc": "BASE_GAME",
     "locations": [
-      "Simple and Tasty - Unlock 1",
-      "Simple and Tasty - Unlock 2",
-      "Simple and Tasty - Unlock 3"
+      "Simple and Tasty - Unlock 1"
     ],
     "recipe_item": "recipe_2min",
     "parents": []
@@ -1737,9 +1695,7 @@
     "region": "REGION_TECH_TREE_COOKERY/JELLY",
     "dlc": "BASE_GAME",
     "locations": [
-      "Jelly - Unlock 1",
-      "Jelly - Unlock 2",
-      "Jelly - Unlock 3"
+      "Jelly - Unlock 1"
     ],
     "recipe_item": "recipe_Jelly",
     "parents": []
@@ -1768,9 +1724,7 @@
     "region": "REGION_TECH_TREE_COOKERY/PASTRIES",
     "dlc": "BASE_GAME",
     "locations": [
-      "Pastries - Unlock 1",
-      "Pastries - Unlock 2",
-      "Pastries - Unlock 3"
+      "Pastries - Unlock 1"
     ],
     "recipe_item": "recipe_Sweet",
     "parents": []
@@ -1819,9 +1773,7 @@
     "region": "REGION_TECH_TREE_COOKERY/PIES",
     "dlc": "BASE_GAME",
     "locations": [
-      "Pies - Unlock 1",
-      "Pies - Unlock 2",
-      "Pies - Unlock 3"
+      "Pies - Unlock 1"
     ],
     "recipe_item": "recipe_Pies",
     "parents": []
@@ -1830,9 +1782,7 @@
     "region": "REGION_TECH_TREE_COOKERY/TASTY_AND_HEALTHY",
     "dlc": "BASE_GAME",
     "locations": [
-      "Tasty and Healthy - Unlock 1",
-      "Tasty and Healthy - Unlock 2",
-      "Tasty and Healthy - Unlock 3"
+      "Tasty and Healthy - Unlock 1"
     ],
     "recipe_item": "recipe_Veg",
     "parents": []
@@ -1861,9 +1811,7 @@
     "region": "REGION_TECH_TREE_COOKERY/FISH_DELICACIES",
     "dlc": "BASE_GAME",
     "locations": [
-      "Fish Delicacies - Unlock 1",
-      "Fish Delicacies - Unlock 2",
-      "Fish Delicacies - Unlock 3"
+      "Fish Delicacies - Unlock 1"
     ],
     "recipe_item": "recipe_delicacies",
     "parents": []
@@ -1882,9 +1830,7 @@
     "region": "REGION_TECH_TREE_COOKERY/SIMPLE_SNACKS",
     "dlc": "BASE_GAME",
     "locations": [
-      "Simple Snacks - Unlock 1",
-      "Simple Snacks - Unlock 2",
-      "Simple Snacks - Unlock 3"
+      "Simple Snacks - Unlock 1"
     ],
     "recipe_item": "recipe_simple_snacks",
     "parents": []
@@ -1893,9 +1839,7 @@
     "region": "REGION_TECH_TREE_COOKERY/NECTAR_OF_THE_GODS",
     "dlc": "BASE_GAME",
     "locations": [
-      "Nectar of the Gods - Unlock 1",
-      "Nectar of the Gods - Unlock 2",
-      "Nectar of the Gods - Unlock 3"
+      "Nectar of the Gods - Unlock 1"
     ],
     "recipe_item": "recipe_honey",
     "parents": []
@@ -1904,9 +1848,7 @@
     "region": "REGION_TECH_TREE_COOKERY/VEGETABLE_SET",
     "dlc": "BASE_GAME",
     "locations": [
-      "Vegetable Set - Unlock 1",
-      "Vegetable Set - Unlock 2",
-      "Vegetable Set - Unlock 3"
+      "Vegetable Set - Unlock 1"
     ],
     "recipe_item": "recipe_vegetable_set",
     "parents": []
@@ -1915,9 +1857,7 @@
     "region": "REGION_TECH_TREE_COOKERY/MILK_PROCESSING",
     "dlc": "BASE_GAME",
     "locations": [
-      "Milk Processing - Unlock 1",
-      "Milk Processing - Unlock 2",
-      "Milk Processing - Unlock 3"
+      "Milk Processing - Unlock 1"
     ],
     "recipe_item": "recipe_milk_processing",
     "parents": []
@@ -1926,9 +1866,7 @@
     "region": "REGION_TECH_TREE_COOKERY/IN_LENTIL_WE_TRUST",
     "dlc": "BASE_GAME",
     "locations": [
-      "In Lentil We Trust - Unlock 1",
-      "In Lentil We Trust - Unlock 2",
-      "In Lentil We Trust - Unlock 3"
+      "In Lentil We Trust - Unlock 1"
     ],
     "recipe_item": "recipe_in_lentil_we_trust",
     "parents": []
@@ -1937,9 +1875,7 @@
     "region": "REGION_TECH_TREE_COOKERY/PATTIES",
     "dlc": "BASE_GAME",
     "locations": [
-      "Patties - Unlock 1",
-      "Patties - Unlock 2",
-      "Patties - Unlock 3"
+      "Patties - Unlock 1"
     ],
     "recipe_item": "recipe_patties",
     "parents": []
@@ -1948,9 +1884,7 @@
     "region": "REGION_TECH_TREE_COOKERY/CHEESE_DISHES",
     "dlc": "BASE_GAME",
     "locations": [
-      "Cheese Dishes - Unlock 1",
-      "Cheese Dishes - Unlock 2",
-      "Cheese Dishes - Unlock 3"
+      "Cheese Dishes - Unlock 1"
     ],
     "recipe_item": "recipe_cheese_dishes",
     "parents": []
@@ -1959,9 +1893,7 @@
     "region": "REGION_TECH_TREE_COOKERY/JELLY_DESSERTS",
     "dlc": "BASE_GAME",
     "locations": [
-      "Jelly Desserts - Unlock 1",
-      "Jelly Desserts - Unlock 2",
-      "Jelly Desserts - Unlock 3"
+      "Jelly Desserts - Unlock 1"
     ],
     "recipe_item": "recipe_jelly_desserts",
     "parents": []

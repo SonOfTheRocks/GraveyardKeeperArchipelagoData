@@ -180,7 +180,9 @@ def load_and_validate(root: Path = ROOT) -> dict[str, Any]:
         technology_regions.add(technology["region"])
         _require(technology["dlc"] in DLCS, f"{context}.dlc: unsupported DLC")
         _string_list(technology["locations"], f"{context}.locations")
-        _require(len(technology["locations"]) == 3, f"{context}: expected three existing research checks")
+        expected_checks = 0 if "quest_reward" in technology else 1 if "recipe_item" in technology else 3
+        _require(len(technology["locations"]) == expected_checks,
+                 f"{context}.locations: expected {expected_checks} research checks")
         _string_list(technology["parents"], f"{context}.parents")
         _require(set(technology["parents"]) <= set(technologies), f"{context}: unknown parent technology")
         _require(game_id not in technology["parents"], f"{context}: technology cannot be its own parent")
