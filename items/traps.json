@@ -1,0 +1,20 @@
+{
+  "ITEM_MONSTERS_TRAP": {
+    "label": "Monsters Trap",
+    "dlc": "BASE_GAME",
+    "classification": "TRAP",
+    "id": 487
+  },
+  "ITEM_BATS_TRAP": {
+    "label": "Bats Trap",
+    "dlc": "BASE_GAME",
+    "classification": "TRAP",
+    "id": 488
+  },
+  "ITEM_GREEN_SLIME_TRAP": {
+    "label": "Green Slime Trap",
+    "dlc": "BASE_GAME",
+    "classification": "TRAP",
+    "id": 489
+  }
+}

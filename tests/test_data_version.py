@@ -15,6 +15,7 @@ class TestDataVersion(unittest.TestCase):
             "item_grants.json",
             "locations.json",
             "quest_reward_triggers.json",
+            "technologies.json",
         )
         for path in paths:
             with self.subTest(path=path):

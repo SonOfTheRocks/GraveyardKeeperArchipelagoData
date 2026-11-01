@@ -1,0 +1,2145 @@
+{
+  "First slice": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/FIRST_SLICE",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "First Slice - Unlock 1",
+      "First Slice - Unlock 2",
+      "First Slice - Unlock 3"
+    ],
+    "quest_reward": "Tutorial - Enter Morgue with Corpse",
+    "parents": []
+  },
+  "The Beginning Of Alchemy": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/THE_BEGINNING_OF_ALCHEMY",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "The Beginning of Alchemy - Unlock 1",
+      "The Beginning of Alchemy - Unlock 2",
+      "The Beginning of Alchemy - Unlock 3"
+    ],
+    "parents": []
+  },
+  "Hardspares": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/HARDSPARES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Hardspares - Unlock 1",
+      "Hardspares - Unlock 2",
+      "Hardspares - Unlock 3"
+    ],
+    "parents": [
+      "First slice"
+    ]
+  },
+  "Softspares": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/SOFTSPARES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Softspares - Unlock 1",
+      "Softspares - Unlock 2",
+      "Softspares - Unlock 3"
+    ],
+    "parents": [
+      "First slice"
+    ]
+  },
+  "Embalm 1": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/EMBALMING_LIQUIDS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Embalming Liquids - Unlock 1",
+      "Embalming Liquids - Unlock 2",
+      "Embalming Liquids - Unlock 3"
+    ],
+    "parents": [
+      "The Beginning Of Alchemy"
+    ]
+  },
+  "Alchemy storage": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/ALCHEMY_STORAGE",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Alchemy Storage - Unlock 1",
+      "Alchemy Storage - Unlock 2",
+      "Alchemy Storage - Unlock 3"
+    ],
+    "parents": [
+      "The Beginning Of Alchemy"
+    ]
+  },
+  "Gentle butcher": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/GENTLE_BUTCHER",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Gentle Butcher - Unlock 1",
+      "Gentle Butcher - Unlock 2",
+      "Gentle Butcher - Unlock 3"
+    ],
+    "parents": [
+      "Hardspares",
+      "Softspares"
+    ]
+  },
+  "Embalming": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/EMBALMING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Embalming - Unlock 1",
+      "Embalming - Unlock 2",
+      "Embalming - Unlock 3"
+    ],
+    "parents": [
+      "First slice",
+      "Embalm 1"
+    ]
+  },
+  "Advanced alchemy": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/ADVANCED_ALCHEMY",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Advanced Alchemy - Unlock 1",
+      "Advanced Alchemy - Unlock 2",
+      "Advanced Alchemy - Unlock 3"
+    ],
+    "parents": [
+      "Alchemy storage"
+    ]
+  },
+  "Important parts": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/IMPORTANT_PARTS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Important Parts - Unlock 1",
+      "Important Parts - Unlock 2",
+      "Important Parts - Unlock 3"
+    ],
+    "parents": [
+      "Softspares"
+    ]
+  },
+  "Embalming 2": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/EMBALMING_2",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Embalming 2 - Unlock 1",
+      "Embalming 2 - Unlock 2",
+      "Embalming 2 - Unlock 3"
+    ],
+    "parents": [
+      "Embalming"
+    ]
+  },
+  "Embalm 2": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/EMBALMING_LIQUIDS_2",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Embalming Liquids 2 - Unlock 1",
+      "Embalming Liquids 2 - Unlock 2",
+      "Embalming Liquids 2 - Unlock 3"
+    ],
+    "parents": [
+      "Embalm 1",
+      "Advanced alchemy"
+    ]
+  },
+  "tech_bag_alchemy": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/ALCHEMISTS_BAG",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Alchemists Bag - Unlock 1",
+      "Alchemists Bag - Unlock 2",
+      "Alchemists Bag - Unlock 3"
+    ],
+    "recipe_item": "recipe_bag_alchemy",
+    "parents": []
+  },
+  "Anatomy 2": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/ANATOMY_2",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Anatomy 2 - Unlock 1",
+      "Anatomy 2 - Unlock 2",
+      "Anatomy 2 - Unlock 3"
+    ],
+    "parents": [
+      "Important parts"
+    ]
+  },
+  "Second chance": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/SECOND_CHANCE",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Second Chance - Unlock 1",
+      "Second Chance - Unlock 2",
+      "Second Chance - Unlock 3"
+    ],
+    "parents": []
+  },
+  "Embalm 3": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/EMBALMING_LIQUIDS_3",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Embalming Liquids 3 - Unlock 1",
+      "Embalming Liquids 3 - Unlock 2",
+      "Embalming Liquids 3 - Unlock 3"
+    ],
+    "parents": [
+      "Embalm 2"
+    ]
+  },
+  "Distilate": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/DISTILLATE",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Distillate - Unlock 1",
+      "Distillate - Unlock 2",
+      "Distillate - Unlock 3"
+    ],
+    "parents": [
+      "Advanced alchemy"
+    ]
+  },
+  "Surgery": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/SURGERY",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Surgery - Unlock 1",
+      "Surgery - Unlock 2",
+      "Surgery - Unlock 3"
+    ],
+    "parents": [
+      "Anatomy 2"
+    ]
+  },
+  "Dark body": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/DARK_BODIES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Dark Bodies - Unlock 1",
+      "Dark Bodies - Unlock 2",
+      "Dark Bodies - Unlock 3"
+    ],
+    "parents": [
+      "Anatomy 2"
+    ]
+  },
+  "Zombie logistic": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/ZOMBIE_LOGISTICS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Zombie Logistics - Unlock 1",
+      "Zombie Logistics - Unlock 2",
+      "Zombie Logistics - Unlock 3"
+    ],
+    "parents": [
+      "Second chance"
+    ]
+  },
+  "Master of alchemy": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/MASTER_OF_ALCHEMY",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Master of Alchemy - Unlock 1",
+      "Master of Alchemy - Unlock 2",
+      "Master of Alchemy - Unlock 3"
+    ],
+    "parents": [
+      "Distilate"
+    ]
+  },
+  "Zombie alchemy": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/ZOMBIE_ALCHEMY_WORKBENCH",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Zombie Alchemy Workbench - Unlock 1",
+      "Zombie Alchemy Workbench - Unlock 2",
+      "Zombie Alchemy Workbench - Unlock 3"
+    ],
+    "parents": [
+      "Distilate"
+    ]
+  },
+  "tech_bag_farming": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/FARMERS_BAG",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Farmers Bag - Unlock 1",
+      "Farmers Bag - Unlock 2",
+      "Farmers Bag - Unlock 3"
+    ],
+    "recipe_item": "recipe_bag_farming",
+    "parents": []
+  },
+  "Tech_cultist": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/CULTIST",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Cultist - Unlock 1",
+      "Cultist - Unlock 2",
+      "Cultist - Unlock 3"
+    ],
+    "parents": [
+      "Dark body"
+    ]
+  },
+  "tech_bag_fishing": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/FISHERMANS_BAG",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Fishermans Bag - Unlock 1",
+      "Fishermans Bag - Unlock 2",
+      "Fishermans Bag - Unlock 3"
+    ],
+    "recipe_item": "recipe_bag_fishing",
+    "parents": []
+  },
+  "tech_bag_tools": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/TOOL_BAG",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Tool Bag - Unlock 1",
+      "Tool Bag - Unlock 2",
+      "Tool Bag - Unlock 3"
+    ],
+    "recipe_item": "recipe_bag_tools",
+    "parents": []
+  },
+  "tech_bag_universal": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/UNIVERSAL_BAG",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Universal Bag - Unlock 1",
+      "Universal Bag - Unlock 2",
+      "Universal Bag - Unlock 3"
+    ],
+    "recipe_item": "recipe_bag_universal",
+    "parents": []
+  },
+  "tech_bag_potions": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/POTION_BAG",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Potion Bag - Unlock 1",
+      "Potion Bag - Unlock 2",
+      "Potion Bag - Unlock 3"
+    ],
+    "recipe_item": "recipe_bag_potions",
+    "parents": []
+  },
+  "tech_bag_builder": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/BUILDERS_BAG",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Builders Bag - Unlock 1",
+      "Builders Bag - Unlock 2",
+      "Builders Bag - Unlock 3"
+    ],
+    "recipe_item": "recipe_bag_builder",
+    "parents": []
+  },
+  "tech_bag_food": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/FOOD_BAG",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Food Bag - Unlock 1",
+      "Food Bag - Unlock 2",
+      "Food Bag - Unlock 3"
+    ],
+    "recipe_item": "recipe_bag_food",
+    "parents": []
+  },
+  "tech_bag_universal_big": {
+    "region": "REGION_TECH_TREE_ANATOMY_AND_ALCHEMY/BIG_UNIVERSAL_BAG",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Big Universal Bag - Unlock 1",
+      "Big Universal Bag - Unlock 2",
+      "Big Universal Bag - Unlock 3"
+    ],
+    "recipe_item": "recipe_bag_universal_big",
+    "parents": []
+  },
+  "Faith": {
+    "region": "REGION_TECH_TREE_THEOLOGY/FAITH",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Faith - Unlock 1",
+      "Faith - Unlock 2",
+      "Faith - Unlock 3"
+    ],
+    "parents": []
+  },
+  "Grave plate": {
+    "region": "REGION_TECH_TREE_THEOLOGY/HUMBLE_MARKER",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Humble Marker - Unlock 1",
+      "Humble Marker - Unlock 2",
+      "Humble Marker - Unlock 3"
+    ],
+    "quest_reward": "Tutorial - Talk to Bishop (1)",
+    "parents": []
+  },
+  "Light of faith": {
+    "region": "REGION_TECH_TREE_THEOLOGY/LIGHT_OF_FAITH",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Light of Faith - Unlock 1",
+      "Light of Faith - Unlock 2",
+      "Light of Faith - Unlock 3"
+    ],
+    "parents": [
+      "Faith"
+    ]
+  },
+  "Сomfort of faith": {
+    "region": "REGION_TECH_TREE_THEOLOGY/COMFORT_OF_FAITH",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Comfort of Faith - Unlock 1",
+      "Comfort of Faith - Unlock 2",
+      "Comfort of Faith - Unlock 3"
+    ],
+    "parents": [
+      "Faith"
+    ]
+  },
+  "Faithbuisness": {
+    "region": "REGION_TECH_TREE_THEOLOGY/BUSINESS_OF_FAITH",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Business of Faith - Unlock 1",
+      "Business of Faith - Unlock 2",
+      "Business of Faith - Unlock 3"
+    ],
+    "parents": [
+      "Faith"
+    ]
+  },
+  "Simple gravestones": {
+    "region": "REGION_TECH_TREE_THEOLOGY/SIMPLE_GRAVESTONES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Simple Gravestones - Unlock 1",
+      "Simple Gravestones - Unlock 2",
+      "Simple Gravestones - Unlock 3"
+    ],
+    "parents": [
+      "Grave plate"
+    ]
+  },
+  "Power of faith": {
+    "region": "REGION_TECH_TREE_THEOLOGY/POWER_OF_FAITH",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Power of Faith - Unlock 1",
+      "Power of Faith - Unlock 2",
+      "Power of Faith - Unlock 3"
+    ],
+    "parents": [
+      "Сomfort of faith"
+    ]
+  },
+  "Price of faith": {
+    "region": "REGION_TECH_TREE_THEOLOGY/PRICE_OF_FAITH",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Price of Faith - Unlock 1",
+      "Price of Faith - Unlock 2",
+      "Price of Faith - Unlock 3"
+    ],
+    "parents": [
+      "Faithbuisness"
+    ]
+  },
+  "Corpses burning": {
+    "region": "REGION_TECH_TREE_THEOLOGY/CREMATION",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Cremation - Unlock 1",
+      "Cremation - Unlock 2",
+      "Cremation - Unlock 3"
+    ],
+    "parents": [
+      "Simple gravestones"
+    ]
+  },
+  "Stone gravestones": {
+    "region": "REGION_TECH_TREE_THEOLOGY/STONE_GRAVESTONES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Stone Gravestones - Unlock 1",
+      "Stone Gravestones - Unlock 2",
+      "Stone Gravestones - Unlock 3"
+    ],
+    "parents": [
+      "Simple gravestones"
+    ]
+  },
+  "Illumination of faith": {
+    "region": "REGION_TECH_TREE_THEOLOGY/ILLUMINATION_OF_FAITH",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Illumination of Faith - Unlock 1",
+      "Illumination of Faith - Unlock 2",
+      "Illumination of Faith - Unlock 3"
+    ],
+    "parents": [
+      "Light of faith"
+    ]
+  },
+  "Smell of faith": {
+    "region": "REGION_TECH_TREE_THEOLOGY/SMELL_OF_FAITH",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Smell of Faith - Unlock 1",
+      "Smell of Faith - Unlock 2",
+      "Smell of Faith - Unlock 3"
+    ],
+    "parents": [
+      "Power of faith"
+    ]
+  },
+  "Praying stand": {
+    "region": "REGION_TECH_TREE_THEOLOGY/GRAVEYARD_ENHANCEMENT",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Graveyard Enhancement - Unlock 1",
+      "Graveyard Enhancement - Unlock 2",
+      "Graveyard Enhancement - Unlock 3"
+    ],
+    "parents": [
+      "Corpses burning"
+    ]
+  },
+  "Carved gravestones": {
+    "region": "REGION_TECH_TREE_THEOLOGY/CARVED_GRAVESTONES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Carved Gravestones - Unlock 1",
+      "Carved Gravestones - Unlock 2",
+      "Carved Gravestones - Unlock 3"
+    ],
+    "parents": [
+      "Stone gravestones"
+    ]
+  },
+  "Softness of faith": {
+    "region": "REGION_TECH_TREE_THEOLOGY/SOFTNESS_OF_FAITH",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Softness of Faith - Unlock 1",
+      "Softness of Faith - Unlock 2",
+      "Softness of Faith - Unlock 3"
+    ],
+    "parents": [
+      "Power of faith"
+    ]
+  },
+  "Corpses burning 2": {
+    "region": "REGION_TECH_TREE_THEOLOGY/CREMATION_2",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Cremation 2 - Unlock 1",
+      "Cremation 2 - Unlock 2",
+      "Cremation 2 - Unlock 3"
+    ],
+    "parents": [
+      "Praying stand"
+    ]
+  },
+  "Grave monuments": {
+    "region": "REGION_TECH_TREE_THEOLOGY/GRAVE_MONUMENTS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Grave Monuments - Unlock 1",
+      "Grave Monuments - Unlock 2",
+      "Grave Monuments - Unlock 3"
+    ],
+    "parents": [
+      "Carved gravestones"
+    ]
+  },
+  "Superpower of faith": {
+    "region": "REGION_TECH_TREE_THEOLOGY/SUPERPOWER_OF_FAITH",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Superpower of Faith - Unlock 1",
+      "Superpower of Faith - Unlock 2",
+      "Superpower of Faith - Unlock 3"
+    ],
+    "parents": [
+      "Softness of faith"
+    ]
+  },
+  "Pheromones": {
+    "region": "REGION_TECH_TREE_THEOLOGY/PHEROMONES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Pheromones - Unlock 1",
+      "Pheromones - Unlock 2",
+      "Pheromones - Unlock 3"
+    ],
+    "parents": [
+      "Smell of faith"
+    ]
+  },
+  "Stone praying stand": {
+    "region": "REGION_TECH_TREE_THEOLOGY/STONE_PRAYER_STATION",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Stone Prayer Station - Unlock 1",
+      "Stone Prayer Station - Unlock 2",
+      "Stone Prayer Station - Unlock 3"
+    ],
+    "parents": [
+      "Corpses burning 2"
+    ]
+  },
+  "Marble gravestones": {
+    "region": "REGION_TECH_TREE_THEOLOGY/MARBLE_GRAVESTONES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Marble Gravestones - Unlock 1",
+      "Marble Gravestones - Unlock 2",
+      "Marble Gravestones - Unlock 3"
+    ],
+    "parents": [
+      "Grave monuments"
+    ]
+  },
+  "Shining of faith": {
+    "region": "REGION_TECH_TREE_THEOLOGY/SHINING_OF_FAITH",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Shining of Faith - Unlock 1",
+      "Shining of Faith - Unlock 2",
+      "Shining of Faith - Unlock 3"
+    ],
+    "parents": [
+      "Illumination of faith",
+      "Superpower of faith"
+    ]
+  },
+  "Advanced gravestones": {
+    "region": "REGION_TECH_TREE_THEOLOGY/ADVANCED_GRAVESTONES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Advanced Gravestones - Unlock 1",
+      "Advanced Gravestones - Unlock 2",
+      "Advanced Gravestones - Unlock 3"
+    ],
+    "recipe_item": "recipe_advanced_gravestones",
+    "parents": []
+  },
+  "Carved marble gravestones": {
+    "region": "REGION_TECH_TREE_THEOLOGY/CARVED_MARBLE_GRAVESTONES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Carved Marble Gravestones - Unlock 1",
+      "Carved Marble Gravestones - Unlock 2",
+      "Carved Marble Gravestones - Unlock 3"
+    ],
+    "parents": [
+      "Marble gravestones"
+    ]
+  },
+  "Crypts": {
+    "region": "REGION_TECH_TREE_THEOLOGY/CRYPTS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Crypts - Unlock 1",
+      "Crypts - Unlock 2",
+      "Crypts - Unlock 3"
+    ],
+    "parents": [
+      "Marble gravestones"
+    ]
+  },
+  "Advanced gravestones II": {
+    "region": "REGION_TECH_TREE_THEOLOGY/ADVANCED_GRAVESTONES_2",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Advanced Gravestones 2 - Unlock 1",
+      "Advanced Gravestones 2 - Unlock 2",
+      "Advanced Gravestones 2 - Unlock 3"
+    ],
+    "recipe_item": "recipe_advanced_gravestones_2",
+    "parents": []
+  },
+  "Stone statues": {
+    "region": "REGION_TECH_TREE_THEOLOGY/STONE_STATUES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Stone Statues - Unlock 1",
+      "Stone Statues - Unlock 2",
+      "Stone Statues - Unlock 3"
+    ],
+    "recipe_item": "recipe_stone_statues",
+    "parents": []
+  },
+  "Marble statues": {
+    "region": "REGION_TECH_TREE_THEOLOGY/MARBLE_STATUES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Marble Statues - Unlock 1",
+      "Marble Statues - Unlock 2",
+      "Marble Statues - Unlock 3"
+    ],
+    "recipe_item": "recipe_marble_statues",
+    "parents": []
+  },
+  "Marble fences": {
+    "region": "REGION_TECH_TREE_THEOLOGY/MARBLE_FENCES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Marble Fences - Unlock 1",
+      "Marble Fences - Unlock 2",
+      "Marble Fences - Unlock 3"
+    ],
+    "recipe_item": "recipe_marble_fences",
+    "parents": []
+  },
+  "Research": {
+    "region": "REGION_TECH_TREE_BOOK_WRITING/RESEARCH",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Research - Unlock 1",
+      "Research - Unlock 2",
+      "Research - Unlock 3"
+    ],
+    "parents": []
+  },
+  "Journalist": {
+    "region": "REGION_TECH_TREE_BOOK_WRITING/JOURNALIST",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Journalist - Unlock 1",
+      "Journalist - Unlock 2",
+      "Journalist - Unlock 3"
+    ],
+    "parents": [
+      "Research"
+    ]
+  },
+  "Writing": {
+    "region": "REGION_TECH_TREE_BOOK_WRITING/WRITING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Writing - Unlock 1",
+      "Writing - Unlock 2",
+      "Writing - Unlock 3"
+    ],
+    "parents": [
+      "Research"
+    ]
+  },
+  "Paper crafting": {
+    "region": "REGION_TECH_TREE_BOOK_WRITING/PAPER_CRAFTING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Paper Crafting - Unlock 1",
+      "Paper Crafting - Unlock 2",
+      "Paper Crafting - Unlock 3"
+    ],
+    "parents": [
+      "Research"
+    ]
+  },
+  "Inventing storyes": {
+    "region": "REGION_TECH_TREE_BOOK_WRITING/INVENTING_STORIES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Inventing Stories - Unlock 1",
+      "Inventing Stories - Unlock 2",
+      "Inventing Stories - Unlock 3"
+    ],
+    "parents": [
+      "Writing"
+    ]
+  },
+  "Writing supplies": {
+    "region": "REGION_TECH_TREE_BOOK_WRITING/WRITING_SUPPLIES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Writing Supplies - Unlock 1",
+      "Writing Supplies - Unlock 2",
+      "Writing Supplies - Unlock 3"
+    ],
+    "parents": [
+      "Paper crafting"
+    ]
+  },
+  "Random text generator": {
+    "region": "REGION_TECH_TREE_BOOK_WRITING/RANDOM_TEXT_GENERATOR",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Random Text Generator - Unlock 1",
+      "Random Text Generator - Unlock 2",
+      "Random Text Generator - Unlock 3"
+    ],
+    "parents": [
+      "Inventing storyes"
+    ]
+  },
+  "Writing tricks": {
+    "region": "REGION_TECH_TREE_BOOK_WRITING/WRITING_TRICKS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Writing Tricks - Unlock 1",
+      "Writing Tricks - Unlock 2",
+      "Writing Tricks - Unlock 3"
+    ],
+    "parents": [
+      "Inventing storyes"
+    ]
+  },
+  "Books": {
+    "region": "REGION_TECH_TREE_BOOK_WRITING/BOOKS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Books - Unlock 1",
+      "Books - Unlock 2",
+      "Books - Unlock 3"
+    ],
+    "parents": [
+      "Writing"
+    ]
+  },
+  "Writer inspiration": {
+    "region": "REGION_TECH_TREE_BOOK_WRITING/WRITERS_INSPIRATION",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Writer's Inspiration - Unlock 1",
+      "Writer's Inspiration - Unlock 2",
+      "Writer's Inspiration - Unlock 3"
+    ],
+    "parents": [
+      "Writing supplies"
+    ]
+  },
+  "Playwright": {
+    "region": "REGION_TECH_TREE_BOOK_WRITING/PLAYWRIGHT",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Playwright - Unlock 1",
+      "Playwright - Unlock 2",
+      "Playwright - Unlock 3"
+    ],
+    "parents": [
+      "Books"
+    ]
+  },
+  "Paper production": {
+    "region": "REGION_TECH_TREE_BOOK_WRITING/PAPER_PRODUCTION",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Paper Production - Unlock 1",
+      "Paper Production - Unlock 2",
+      "Paper Production - Unlock 3"
+    ],
+    "parents": [
+      "Writer inspiration"
+    ]
+  },
+  "A simple printing press": {
+    "region": "REGION_TECH_TREE_BOOK_WRITING/A_SIMPLE_PRINTING_PRESS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "A Simple Printing Press - Unlock 1",
+      "A Simple Printing Press - Unlock 2",
+      "A Simple Printing Press - Unlock 3"
+    ],
+    "parents": [
+      "Paper production"
+    ]
+  },
+  "Complex printing press": {
+    "region": "REGION_TECH_TREE_BOOK_WRITING/COMPLEX_PRINTING_PRESS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Complex Printing Press - Unlock 1",
+      "Complex Printing Press - Unlock 2",
+      "Complex Printing Press - Unlock 3"
+    ],
+    "parents": [
+      "A simple printing press"
+    ]
+  },
+  "Garden beds": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/GARDEN_BEDS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Garden Beds - Unlock 1",
+      "Garden Beds - Unlock 2",
+      "Garden Beds - Unlock 3"
+    ],
+    "parents": []
+  },
+  "Gathering": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/GATHERING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Gathering - Unlock 1",
+      "Gathering - Unlock 2",
+      "Gathering - Unlock 3"
+    ],
+    "parents": []
+  },
+  "Improvement": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/IMPROVEMENT",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Improvement - Unlock 1",
+      "Improvement - Unlock 2",
+      "Improvement - Unlock 3"
+    ],
+    "parents": [
+      "Garden beds"
+    ]
+  },
+  "The master gathering": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/MASTER_GATHERER",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Master Gatherer - Unlock 1",
+      "Master Gatherer - Unlock 2",
+      "Master Gatherer - Unlock 3"
+    ],
+    "parents": [
+      "Gathering"
+    ]
+  },
+  "Transplanting": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/TRANSPLANTING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Transplanting - Unlock 1",
+      "Transplanting - Unlock 2",
+      "Transplanting - Unlock 3"
+    ],
+    "parents": [
+      "Gathering"
+    ]
+  },
+  "Browncastle": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/BEEKEEPING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Beekeeping - Unlock 1",
+      "Beekeeping - Unlock 2",
+      "Beekeeping - Unlock 3"
+    ],
+    "parents": [
+      "Gathering"
+    ]
+  },
+  "Gardening": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/GARDENING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Gardening - Unlock 1",
+      "Gardening - Unlock 2",
+      "Gardening - Unlock 3"
+    ],
+    "parents": [
+      "Improvement"
+    ]
+  },
+  "Insects": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/INSECTS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Insects - Unlock 1",
+      "Insects - Unlock 2",
+      "Insects - Unlock 3"
+    ],
+    "parents": [
+      "Browncastle"
+    ]
+  },
+  "Decay": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/DECAY",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Decay - Unlock 1",
+      "Decay - Unlock 2",
+      "Decay - Unlock 3"
+    ],
+    "parents": [
+      "Garden beds"
+    ]
+  },
+  "Zombie gardening": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/ZOMBIE_GARDENING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Zombie Gardening - Unlock 1",
+      "Zombie Gardening - Unlock 2",
+      "Zombie Gardening - Unlock 3"
+    ],
+    "parents": [
+      "Gardening"
+    ]
+  },
+  "Grape farming": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/GRAPE_FARMING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Grape Farming - Unlock 1",
+      "Grape Farming - Unlock 2",
+      "Grape Farming - Unlock 3"
+    ],
+    "parents": [
+      "Transplanting"
+    ]
+  },
+  "The domestication of bees": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/BEE_DOMESTICATION",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Bee Domestication - Unlock 1",
+      "Bee Domestication - Unlock 2",
+      "Bee Domestication - Unlock 3"
+    ],
+    "parents": [
+      "Insects"
+    ]
+  },
+  "Simple fertilizers": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/SIMPLE_FERTILIZERS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Simple Fertilizers - Unlock 1",
+      "Simple Fertilizers - Unlock 2",
+      "Simple Fertilizers - Unlock 3"
+    ],
+    "parents": [
+      "Decay"
+    ]
+  },
+  "Brewing": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/BREWING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Brewing - Unlock 1",
+      "Brewing - Unlock 2",
+      "Brewing - Unlock 3"
+    ],
+    "parents": [
+      "Decay"
+    ]
+  },
+  "Zombie vineyard": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/ZOMBIE_VINEYARD",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Zombie Vineyard - Unlock 1",
+      "Zombie Vineyard - Unlock 2",
+      "Zombie Vineyard - Unlock 3"
+    ],
+    "parents": [
+      "Grape farming"
+    ]
+  },
+  "Beefriend": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/BEEFRIEND",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Beefriend - Unlock 1",
+      "Beefriend - Unlock 2",
+      "Beefriend - Unlock 3"
+    ],
+    "parents": [
+      "The domestication of bees"
+    ]
+  },
+  "Digestion": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/DIGESTION",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Digestion - Unlock 1",
+      "Digestion - Unlock 2",
+      "Digestion - Unlock 3"
+    ],
+    "parents": [
+      "Brewing"
+    ]
+  },
+  "Zombie brewing": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/ZOMBIE_BREWERY",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Zombie Brewery - Unlock 1",
+      "Zombie Brewery - Unlock 2",
+      "Zombie Brewery - Unlock 3"
+    ],
+    "parents": [
+      "Brewing"
+    ]
+  },
+  "Winemaking": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/WINEMAKING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Winemaking - Unlock 1",
+      "Winemaking - Unlock 2",
+      "Winemaking - Unlock 3"
+    ],
+    "parents": [
+      "Grape farming"
+    ]
+  },
+  "Complex fertilizers": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/COMPLEX_FERTILIZERS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Complex Fertilizers - Unlock 1",
+      "Complex Fertilizers - Unlock 2",
+      "Complex Fertilizers - Unlock 3"
+    ],
+    "parents": [
+      "Simple fertilizers"
+    ]
+  },
+  "Strong alcohol": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/STRONG_ALCOHOL",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Strong Alcohol - Unlock 1",
+      "Strong Alcohol - Unlock 2",
+      "Strong Alcohol - Unlock 3"
+    ],
+    "parents": [
+      "Brewing",
+      "Winemaking"
+    ]
+  },
+  "Zombie winemaking": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/ZOMBIE_WINERY",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Zombie Winery - Unlock 1",
+      "Zombie Winery - Unlock 2",
+      "Zombie Winery - Unlock 3"
+    ],
+    "parents": [
+      "Winemaking"
+    ]
+  },
+  "Blending": {
+    "region": "REGION_TECH_TREE_FARMING_AND_NATURE/BLENDING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Blending - Unlock 1",
+      "Blending - Unlock 2",
+      "Blending - Unlock 3"
+    ],
+    "parents": [
+      "Strong alcohol"
+    ]
+  },
+  "Iron": {
+    "region": "REGION_TECH_TREE_SMITHING/IRON",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Iron - Unlock 1",
+      "Iron - Unlock 2",
+      "Iron - Unlock 3"
+    ],
+    "quest_reward": "Krezvold Reward - Ask about metal ore",
+    "parents": []
+  },
+  "Primitive forging": {
+    "region": "REGION_TECH_TREE_SMITHING/PRIMITIVE_FORGING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Primitive Forging - Unlock 1",
+      "Primitive Forging - Unlock 2",
+      "Primitive Forging - Unlock 3"
+    ],
+    "parents": [
+      "Iron"
+    ]
+  },
+  "Glass": {
+    "region": "REGION_TECH_TREE_SMITHING/GLASS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Glass - Unlock 1",
+      "Glass - Unlock 2",
+      "Glass - Unlock 3"
+    ],
+    "parents": [
+      "Iron"
+    ]
+  },
+  "Advanced forging": {
+    "region": "REGION_TECH_TREE_SMITHING/ADVANCED_FORGING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Advanced Forging - Unlock 1",
+      "Advanced Forging - Unlock 2",
+      "Advanced Forging - Unlock 3"
+    ],
+    "parents": [
+      "Primitive forging"
+    ]
+  },
+  "Instruments": {
+    "region": "REGION_TECH_TREE_SMITHING/TOOLS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Tools - Unlock 1",
+      "Tools - Unlock 2",
+      "Tools - Unlock 3"
+    ],
+    "parents": [
+      "Primitive forging"
+    ]
+  },
+  "Weapons": {
+    "region": "REGION_TECH_TREE_SMITHING/WEAPONS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Weapons - Unlock 1",
+      "Weapons - Unlock 2",
+      "Weapons - Unlock 3"
+    ],
+    "parents": [
+      "Advanced forging"
+    ]
+  },
+  "Inborn blacksmith": {
+    "region": "REGION_TECH_TREE_SMITHING/INBORN_BLACKSMITH",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Inborn Blacksmith - Unlock 1",
+      "Inborn Blacksmith - Unlock 2",
+      "Inborn Blacksmith - Unlock 3"
+    ],
+    "parents": [
+      "Advanced forging"
+    ]
+  },
+  "Advanced smelting": {
+    "region": "REGION_TECH_TREE_SMITHING/ADVANCED_SMELTING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Advanced Smelting - Unlock 1",
+      "Advanced Smelting - Unlock 2",
+      "Advanced Smelting - Unlock 3"
+    ],
+    "parents": [
+      "Primitive forging"
+    ]
+  },
+  "Glass-blower": {
+    "region": "REGION_TECH_TREE_SMITHING/GLASS_BLOWER",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Glass Blower - Unlock 1",
+      "Glass Blower - Unlock 2",
+      "Glass Blower - Unlock 3"
+    ],
+    "parents": [
+      "Glass"
+    ]
+  },
+  "Martial skills": {
+    "region": "REGION_TECH_TREE_SMITHING/MARTIAL_SKILLS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Martial Skills - Unlock 1",
+      "Martial Skills - Unlock 2",
+      "Martial Skills - Unlock 3"
+    ],
+    "parents": [
+      "Weapons"
+    ]
+  },
+  "Steel": {
+    "region": "REGION_TECH_TREE_SMITHING/STEEL",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Steel - Unlock 1",
+      "Steel - Unlock 2",
+      "Steel - Unlock 3"
+    ],
+    "parents": [
+      "Advanced forging",
+      "Advanced smelting"
+    ]
+  },
+  "Rules of burning": {
+    "region": "REGION_TECH_TREE_SMITHING/RULES_OF_BURNING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Rules of Burning - Unlock 1",
+      "Rules of Burning - Unlock 2",
+      "Rules of Burning - Unlock 3"
+    ],
+    "parents": [
+      "Advanced smelting"
+    ]
+  },
+  "Engineer": {
+    "region": "REGION_TECH_TREE_SMITHING/ENGINEER",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Engineer - Unlock 1",
+      "Engineer - Unlock 2",
+      "Engineer - Unlock 3"
+    ],
+    "parents": [
+      "Steel"
+    ]
+  },
+  "Steel instruments": {
+    "region": "REGION_TECH_TREE_SMITHING/STEEL_TOOLS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Steel Tools - Unlock 1",
+      "Steel Tools - Unlock 2",
+      "Steel Tools - Unlock 3"
+    ],
+    "parents": [
+      "Steel"
+    ]
+  },
+  "Iron castings": {
+    "region": "REGION_TECH_TREE_SMITHING/IRON_CASTINGS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Iron Castings - Unlock 1",
+      "Iron Castings - Unlock 2",
+      "Iron Castings - Unlock 3"
+    ],
+    "parents": [
+      "Advanced smelting"
+    ]
+  },
+  "Glass-blower 2": {
+    "region": "REGION_TECH_TREE_SMITHING/GLASS_BLOWER_2",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Glass Blower 2 - Unlock 1",
+      "Glass Blower 2 - Unlock 2",
+      "Glass Blower 2 - Unlock 3"
+    ],
+    "parents": [
+      "Glass-blower"
+    ]
+  },
+  "Steel Weapons": {
+    "region": "REGION_TECH_TREE_SMITHING/STEEL_WEAPONS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Steel Weapons - Unlock 1",
+      "Steel Weapons - Unlock 2",
+      "Steel Weapons - Unlock 3"
+    ],
+    "parents": [
+      "Steel"
+    ]
+  },
+  "Jeweler": {
+    "region": "REGION_TECH_TREE_SMITHING/JEWELER",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Jeweler - Unlock 1",
+      "Jeweler - Unlock 2",
+      "Jeweler - Unlock 3"
+    ],
+    "parents": [
+      "Iron castings"
+    ]
+  },
+  "Skilled casting": {
+    "region": "REGION_TECH_TREE_SMITHING/SKILLED_CASTING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Skilled Casting - Unlock 1",
+      "Skilled Casting - Unlock 2",
+      "Skilled Casting - Unlock 3"
+    ],
+    "parents": [
+      "Steel Weapons"
+    ]
+  },
+  "Sword master": {
+    "region": "REGION_TECH_TREE_SMITHING/SWORD_MASTER",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Sword Master - Unlock 1",
+      "Sword Master - Unlock 2",
+      "Sword Master - Unlock 3"
+    ],
+    "parents": [
+      "Steel Weapons"
+    ]
+  },
+  "Precious little things": {
+    "region": "REGION_TECH_TREE_SMITHING/PRECIOUS_LITTLE_THINGS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Precious Little Things - Unlock 1",
+      "Precious Little Things - Unlock 2",
+      "Precious Little Things - Unlock 3"
+    ],
+    "parents": [
+      "Jeweler"
+    ]
+  },
+  "The idea of the tree": {
+    "region": "REGION_TECH_TREE_BUILDING/THE_CONCEPT_OF_WOOD",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "The Concept of Wood - Unlock 1",
+      "The Concept of Wood - Unlock 2",
+      "The Concept of Wood - Unlock 3"
+    ],
+    "parents": []
+  },
+  "The idea of the stone": {
+    "region": "REGION_TECH_TREE_BUILDING/THE_CONCEPT_OF_STONE",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "The Concept of Stone - Unlock 1",
+      "The Concept of Stone - Unlock 2",
+      "The Concept of Stone - Unlock 3"
+    ],
+    "parents": []
+  },
+  "The idea of the earth": {
+    "region": "REGION_TECH_TREE_BUILDING/THE_CONCEPT_OF_DIRT",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "The Concept of Dirt - Unlock 1",
+      "The Concept of Dirt - Unlock 2",
+      "The Concept of Dirt - Unlock 3"
+    ],
+    "parents": []
+  },
+  "Saw": {
+    "region": "REGION_TECH_TREE_BUILDING/SAWING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Sawing - Unlock 1",
+      "Sawing - Unlock 2",
+      "Sawing - Unlock 3"
+    ],
+    "parents": [
+      "The idea of the tree"
+    ]
+  },
+  "Clay": {
+    "region": "REGION_TECH_TREE_BUILDING/CLAY",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Clay - Unlock 1",
+      "Clay - Unlock 2",
+      "Clay - Unlock 3"
+    ],
+    "parents": [
+      "The idea of the earth"
+    ]
+  },
+  "Firewood": {
+    "region": "REGION_TECH_TREE_BUILDING/FIREWOOD",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Firewood - Unlock 1",
+      "Firewood - Unlock 2",
+      "Firewood - Unlock 3"
+    ],
+    "parents": [
+      "Saw"
+    ]
+  },
+  "Stone processing": {
+    "region": "REGION_TECH_TREE_BUILDING/STONEWORKING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Stoneworking - Unlock 1",
+      "Stoneworking - Unlock 2",
+      "Stoneworking - Unlock 3"
+    ],
+    "parents": [
+      "The idea of the stone"
+    ]
+  },
+  "Mining": {
+    "region": "REGION_TECH_TREE_BUILDING/MINING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Mining - Unlock 1",
+      "Mining - Unlock 2",
+      "Mining - Unlock 3"
+    ],
+    "parents": [
+      "The idea of the stone"
+    ]
+  },
+  "Ceramic firing": {
+    "region": "REGION_TECH_TREE_BUILDING/CERAMIC_FIRING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Ceramic Firing - Unlock 1",
+      "Ceramic Firing - Unlock 2",
+      "Ceramic Firing - Unlock 3"
+    ],
+    "parents": [
+      "Clay"
+    ]
+  },
+  "Woodcutter": {
+    "region": "REGION_TECH_TREE_BUILDING/WOODCUTTER",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Woodcutter - Unlock 1",
+      "Woodcutter - Unlock 2",
+      "Woodcutter - Unlock 3"
+    ],
+    "parents": [
+      "Firewood"
+    ]
+  },
+  "Precious metals": {
+    "region": "REGION_TECH_TREE_BUILDING/PRECIOUS_METALS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Precious Metals - Unlock 1",
+      "Precious Metals - Unlock 2",
+      "Precious Metals - Unlock 3"
+    ],
+    "parents": [
+      "Mining"
+    ]
+  },
+  "Zombie mining": {
+    "region": "REGION_TECH_TREE_BUILDING/ZOMBIE_MINING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Zombie Mining - Unlock 1",
+      "Zombie Mining - Unlock 2",
+      "Zombie Mining - Unlock 3"
+    ],
+    "parents": [
+      "Mining"
+    ]
+  },
+  "Wood processing": {
+    "region": "REGION_TECH_TREE_BUILDING/WOODWORKING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Woodworking - Unlock 1",
+      "Woodworking - Unlock 2",
+      "Woodworking - Unlock 3"
+    ],
+    "parents": [
+      "Saw"
+    ]
+  },
+  "Zombie woodcuttering": {
+    "region": "REGION_TECH_TREE_BUILDING/ZOMBIE_WOODCUTTING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Zombie Woodcutting - Unlock 1",
+      "Zombie Woodcutting - Unlock 2",
+      "Zombie Woodcutting - Unlock 3"
+    ],
+    "parents": [
+      "Woodcutter"
+    ]
+  },
+  "Related ore": {
+    "region": "REGION_TECH_TREE_BUILDING/RELATED_ORE",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Related Ore - Unlock 1",
+      "Related Ore - Unlock 2",
+      "Related Ore - Unlock 3"
+    ],
+    "parents": [
+      "Precious metals"
+    ]
+  },
+  "Assembly stand": {
+    "region": "REGION_TECH_TREE_BUILDING/ASSEMBLY_STAND",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Assembly Stand - Unlock 1",
+      "Assembly Stand - Unlock 2",
+      "Assembly Stand - Unlock 3"
+    ],
+    "parents": [
+      "Wood processing"
+    ]
+  },
+  "Circular saw": {
+    "region": "REGION_TECH_TREE_BUILDING/CIRCULAR_SAW",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Circular Saw - Unlock 1",
+      "Circular Saw - Unlock 2",
+      "Circular Saw - Unlock 3"
+    ],
+    "parents": [
+      "Wood processing"
+    ]
+  },
+  "Stone carving": {
+    "region": "REGION_TECH_TREE_BUILDING/STONE_CARVING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Stone Carving - Unlock 1",
+      "Stone Carving - Unlock 2",
+      "Stone Carving - Unlock 3"
+    ],
+    "parents": [
+      "Stone processing"
+    ]
+  },
+  "Scent of gold": {
+    "region": "REGION_TECH_TREE_BUILDING/SCENT_OF_GOLD",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Scènt of Gold - Unlock 1",
+      "Scènt of Gold - Unlock 2",
+      "Scènt of Gold - Unlock 3"
+    ],
+    "parents": [
+      "Related ore"
+    ]
+  },
+  "Wooden work": {
+    "region": "REGION_TECH_TREE_BUILDING/FINE_WOODWORKING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Fine Woodworking - Unlock 1",
+      "Fine Woodworking - Unlock 2",
+      "Fine Woodworking - Unlock 3"
+    ],
+    "parents": [
+      "Assembly stand"
+    ]
+  },
+  "Working trick": {
+    "region": "REGION_TECH_TREE_BUILDING/TRICKS_OF_THE_TRADE",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Tricks of the Trade - Unlock 1",
+      "Tricks of the Trade - Unlock 2",
+      "Tricks of the Trade - Unlock 3"
+    ],
+    "parents": [
+      "Circular saw",
+      "Stone carving"
+    ]
+  },
+  "Marble Quarrying": {
+    "region": "REGION_TECH_TREE_BUILDING/MARBLE_QUARRYING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Marble Quarrying - Unlock 1",
+      "Marble Quarrying - Unlock 2",
+      "Marble Quarrying - Unlock 3"
+    ],
+    "parents": [
+      "Stone carving"
+    ]
+  },
+  "Zombie quarrying I": {
+    "region": "REGION_TECH_TREE_BUILDING/ZOMBIE_QUARRYING_1",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Zombie Quarrying 1 - Unlock 1",
+      "Zombie Quarrying 1 - Unlock 2",
+      "Zombie Quarrying 1 - Unlock 3"
+    ],
+    "parents": [
+      "Stone carving"
+    ]
+  },
+  "Gems": {
+    "region": "REGION_TECH_TREE_BUILDING/GEMS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Gems - Unlock 1",
+      "Gems - Unlock 2",
+      "Gems - Unlock 3"
+    ],
+    "parents": [
+      "Related ore"
+    ]
+  },
+  "The art of stone": {
+    "region": "REGION_TECH_TREE_BUILDING/THE_ART_OF_STONE",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "The Art of Stone - Unlock 1",
+      "The Art of Stone - Unlock 2",
+      "The Art of Stone - Unlock 3"
+    ],
+    "parents": [
+      "Marble Quarrying"
+    ]
+  },
+  "Zombie quarrying II": {
+    "region": "REGION_TECH_TREE_BUILDING/ZOMBIE_QUARRYING_2",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Zombie Quarrying 2 - Unlock 1",
+      "Zombie Quarrying 2 - Unlock 2",
+      "Zombie Quarrying 2 - Unlock 3"
+    ],
+    "parents": [
+      "Zombie quarrying I",
+      "Marble Quarrying"
+    ]
+  },
+  "Best friend": {
+    "region": "REGION_TECH_TREE_BUILDING/BEST_FRIEND",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Best Friend - Unlock 1",
+      "Best Friend - Unlock 2",
+      "Best Friend - Unlock 3"
+    ],
+    "parents": [
+      "Gems"
+    ]
+  },
+  "2min": {
+    "region": "REGION_TECH_TREE_COOKERY/SIMPLE_AND_TASTY",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Simple and Tasty - Unlock 1",
+      "Simple and Tasty - Unlock 2",
+      "Simple and Tasty - Unlock 3"
+    ],
+    "recipe_item": "recipe_2min",
+    "parents": []
+  },
+  "Vegetable dishes": {
+    "region": "REGION_TECH_TREE_COOKERY/VEGETABLE_DISHES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Vegetable Dishes - Unlock 1",
+      "Vegetable Dishes - Unlock 2",
+      "Vegetable Dishes - Unlock 3"
+    ],
+    "parents": []
+  },
+  "Jelly": {
+    "region": "REGION_TECH_TREE_COOKERY/JELLY",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Jelly - Unlock 1",
+      "Jelly - Unlock 2",
+      "Jelly - Unlock 3"
+    ],
+    "recipe_item": "recipe_Jelly",
+    "parents": []
+  },
+  "Bread": {
+    "region": "REGION_TECH_TREE_COOKERY/BREAD",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Bread - Unlock 1",
+      "Bread - Unlock 2",
+      "Bread - Unlock 3"
+    ],
+    "parents": []
+  },
+  "Fish": {
+    "region": "REGION_TECH_TREE_COOKERY/FISH_DISHES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Fish Dishes - Unlock 1",
+      "Fish Dishes - Unlock 2",
+      "Fish Dishes - Unlock 3"
+    ],
+    "parents": []
+  },
+  "Sweet baking": {
+    "region": "REGION_TECH_TREE_COOKERY/PASTRIES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Pastries - Unlock 1",
+      "Pastries - Unlock 2",
+      "Pastries - Unlock 3"
+    ],
+    "recipe_item": "recipe_Sweet",
+    "parents": []
+  },
+  "Vegetable soups": {
+    "region": "REGION_TECH_TREE_COOKERY/SOUPS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Soups - Unlock 1",
+      "Soups - Unlock 2",
+      "Soups - Unlock 3"
+    ],
+    "parents": []
+  },
+  "French cuisine": {
+    "region": "REGION_TECH_TREE_COOKERY/EGG_DISHES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Egg Dishes - Unlock 1",
+      "Egg Dishes - Unlock 2",
+      "Egg Dishes - Unlock 3"
+    ],
+    "parents": []
+  },
+  "Italian kitchen": {
+    "region": "REGION_TECH_TREE_COOKERY/GOOD_CARBS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Good Carbs - Unlock 1",
+      "Good Carbs - Unlock 2",
+      "Good Carbs - Unlock 3"
+    ],
+    "parents": []
+  },
+  "Fish shish kebab": {
+    "region": "REGION_TECH_TREE_COOKERY/KEBAB",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Kebab - Unlock 1",
+      "Kebab - Unlock 2",
+      "Kebab - Unlock 3"
+    ],
+    "parents": []
+  },
+  "Pies": {
+    "region": "REGION_TECH_TREE_COOKERY/PIES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Pies - Unlock 1",
+      "Pies - Unlock 2",
+      "Pies - Unlock 3"
+    ],
+    "recipe_item": "recipe_Pies",
+    "parents": []
+  },
+  "Vegetable bowl": {
+    "region": "REGION_TECH_TREE_COOKERY/TASTY_AND_HEALTHY",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Tasty and Healthy - Unlock 1",
+      "Tasty and Healthy - Unlock 2",
+      "Tasty and Healthy - Unlock 3"
+    ],
+    "recipe_item": "recipe_Veg",
+    "parents": []
+  },
+  "Fast food": {
+    "region": "REGION_TECH_TREE_COOKERY/MEAT_FIESTA",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Meat Fiesta - Unlock 1",
+      "Meat Fiesta - Unlock 2",
+      "Meat Fiesta - Unlock 3"
+    ],
+    "parents": []
+  },
+  "For beer": {
+    "region": "REGION_TECH_TREE_COOKERY/BEER_SNACKS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Beer Snacks - Unlock 1",
+      "Beer Snacks - Unlock 2",
+      "Beer Snacks - Unlock 3"
+    ],
+    "parents": []
+  },
+  "Fish delicous": {
+    "region": "REGION_TECH_TREE_COOKERY/FISH_DELICACIES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Fish Delicacies - Unlock 1",
+      "Fish Delicacies - Unlock 2",
+      "Fish Delicacies - Unlock 3"
+    ],
+    "recipe_item": "recipe_delicacies",
+    "parents": []
+  },
+  "Desert": {
+    "region": "REGION_TECH_TREE_COOKERY/CAKE",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Cake - Unlock 1",
+      "Cake - Unlock 2",
+      "Cake - Unlock 3"
+    ],
+    "parents": []
+  },
+  "Simple snacks": {
+    "region": "REGION_TECH_TREE_COOKERY/SIMPLE_SNACKS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Simple Snacks - Unlock 1",
+      "Simple Snacks - Unlock 2",
+      "Simple Snacks - Unlock 3"
+    ],
+    "recipe_item": "recipe_simple_snacks",
+    "parents": []
+  },
+  "Alcohol cook": {
+    "region": "REGION_TECH_TREE_COOKERY/NECTAR_OF_THE_GODS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Nectar of the Gods - Unlock 1",
+      "Nectar of the Gods - Unlock 2",
+      "Nectar of the Gods - Unlock 3"
+    ],
+    "recipe_item": "recipe_honey",
+    "parents": []
+  },
+  "Vegetable set": {
+    "region": "REGION_TECH_TREE_COOKERY/VEGETABLE_SET",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Vegetable Set - Unlock 1",
+      "Vegetable Set - Unlock 2",
+      "Vegetable Set - Unlock 3"
+    ],
+    "recipe_item": "recipe_vegetable_set",
+    "parents": []
+  },
+  "Milk processing": {
+    "region": "REGION_TECH_TREE_COOKERY/MILK_PROCESSING",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Milk Processing - Unlock 1",
+      "Milk Processing - Unlock 2",
+      "Milk Processing - Unlock 3"
+    ],
+    "recipe_item": "recipe_milk_processing",
+    "parents": []
+  },
+  "In Lentil We Trust": {
+    "region": "REGION_TECH_TREE_COOKERY/IN_LENTIL_WE_TRUST",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "In Lentil We Trust - Unlock 1",
+      "In Lentil We Trust - Unlock 2",
+      "In Lentil We Trust - Unlock 3"
+    ],
+    "recipe_item": "recipe_in_lentil_we_trust",
+    "parents": []
+  },
+  "Patties": {
+    "region": "REGION_TECH_TREE_COOKERY/PATTIES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Patties - Unlock 1",
+      "Patties - Unlock 2",
+      "Patties - Unlock 3"
+    ],
+    "recipe_item": "recipe_patties",
+    "parents": []
+  },
+  "Cheese dishes": {
+    "region": "REGION_TECH_TREE_COOKERY/CHEESE_DISHES",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Cheese Dishes - Unlock 1",
+      "Cheese Dishes - Unlock 2",
+      "Cheese Dishes - Unlock 3"
+    ],
+    "recipe_item": "recipe_cheese_dishes",
+    "parents": []
+  },
+  "Jelly desserts": {
+    "region": "REGION_TECH_TREE_COOKERY/JELLY_DESSERTS",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Jelly Desserts - Unlock 1",
+      "Jelly Desserts - Unlock 2",
+      "Jelly Desserts - Unlock 3"
+    ],
+    "recipe_item": "recipe_jelly_desserts",
+    "parents": []
+  },
+  "Honey cake": {
+    "region": "REGION_TECH_TREE_COOKERY/HONEY_CAKE",
+    "dlc": "BASE_GAME",
+    "locations": [
+      "Honey Cake - Unlock 1",
+      "Honey Cake - Unlock 2",
+      "Honey Cake - Unlock 3"
+    ],
+    "parents": []
+  },
+  "soul_sins_1": {
+    "region": "REGION_TECH_TREE_SPIRITUALISM/BEGINNER_HEALER",
+    "dlc": "BETTER_SAVE_SOUL",
+    "locations": [
+      "Beginner Healer - Unlock 1",
+      "Beginner Healer - Unlock 2",
+      "Beginner Healer - Unlock 3"
+    ],
+    "parents": []
+  },
+  "soul_sins_2": {
+    "region": "REGION_TECH_TREE_SPIRITUALISM/HEALER_ENTHUSIAST",
+    "dlc": "BETTER_SAVE_SOUL",
+    "locations": [
+      "Healer Enthusiast - Unlock 1",
+      "Healer Enthusiast - Unlock 2",
+      "Healer Enthusiast - Unlock 3"
+    ],
+    "parents": [
+      "soul_sins_1"
+    ]
+  },
+  "soul_stone_fences": {
+    "region": "REGION_TECH_TREE_SPIRITUALISM//STONE_GRAVE_FENCE",
+    "dlc": "BETTER_SAVE_SOUL",
+    "locations": [
+      "Stone Grave Fence - Unlock 1",
+      "Stone Grave Fence - Unlock 2",
+      "Stone Grave Fence - Unlock 3"
+    ],
+    "parents": [
+      "soul_sins_2"
+    ]
+  },
+  "soul_church_additions": {
+    "region": "REGION_TECH_TREE_SPIRITUALISM/PRAYS_FOR_SOULS",
+    "dlc": "BETTER_SAVE_SOUL",
+    "locations": [
+      "Prays for Souls - Unlock 1",
+      "Prays for Souls - Unlock 2",
+      "Prays for Souls - Unlock 3"
+    ],
+    "parents": [
+      "soul_sins_2"
+    ]
+  },
+  "soul_buildings": {
+    "region": "REGION_TECH_TREE_SPIRITUALISM/UPDATED_EQUIPMENT",
+    "dlc": "BETTER_SAVE_SOUL",
+    "locations": [
+      "Updated Equipment - Unlock 1",
+      "Updated Equipment - Unlock 2",
+      "Updated Equipment - Unlock 3"
+    ],
+    "parents": [
+      "soul_sins_2"
+    ]
+  },
+  "soul_totem_tech": {
+    "region": "REGION_TECH_TREE_SPIRITUALISM/USEFUL_EQUIPMENT",
+    "dlc": "BETTER_SAVE_SOUL",
+    "locations": [
+      "Useful Equipment - Unlock 1",
+      "Useful Equipment - Unlock 2",
+      "Useful Equipment - Unlock 3"
+    ],
+    "parents": [
+      "soul_sins_2"
+    ]
+  },
+  "soul_marble_fences": {
+    "region": "REGION_TECH_TREE_SPIRITUALISM/MARBLE_GRAVE_FENCE",
+    "dlc": "BETTER_SAVE_SOUL",
+    "locations": [
+      "Marble Grave Fence - Unlock 1",
+      "Marble Grave Fence - Unlock 2",
+      "Marble Grave Fence - Unlock 3"
+    ],
+    "parents": [
+      "soul_stone_fences"
+    ]
+  },
+  "soul_sins_3": {
+    "region": "REGION_TECH_TREE_SPIRITUALISM/EXPERIENCED_HEALER",
+    "dlc": "BETTER_SAVE_SOUL",
+    "locations": [
+      "Experienced Healer - Unlock 1",
+      "Experienced Healer - Unlock 2",
+      "Experienced Healer - Unlock 3"
+    ],
+    "parents": [
+      "soul_buildings"
+    ]
+  },
+  "soul_stone_statues": {
+    "region": "REGION_TECH_TREE_SPIRITUALISM/STONE_GRAVESTONES",
+    "dlc": "BETTER_SAVE_SOUL",
+    "locations": [
+      "Stone Gravestones (Spiritualism) - Unlock 1 (Spiritualism)",
+      "Stone Gravestones (Spiritualism) - Unlock 2 (Spiritualism)",
+      "Stone Gravestones (Spiritualism) - Unlock 3 (Spiritualism)"
+    ],
+    "parents": [
+      "soul_sins_3"
+    ]
+  },
+  "soul_writing_additions": {
+    "region": "REGION_TECH_TREE_SPIRITUALISM/EXQUISITE_WRITING",
+    "dlc": "BETTER_SAVE_SOUL",
+    "locations": [
+      "Exquisite Writing - Unlock 1",
+      "Exquisite Writing - Unlock 2",
+      "Exquisite Writing - Unlock 3"
+    ],
+    "parents": [
+      "soul_sins_3"
+    ]
+  },
+  "soul_buildings_2": {
+    "region": "REGION_TECH_TREE_SPIRITUALISM/UPDATED_EQUIPMENT_2",
+    "dlc": "BETTER_SAVE_SOUL",
+    "locations": [
+      "Updated Equipment 2 - Unlock 1",
+      "Updated Equipment 2 - Unlock 2",
+      "Updated Equipment 2 - Unlock 3"
+    ],
+    "parents": [
+      "soul_sins_3"
+    ]
+  },
+  "soul_garden_additions": {
+    "region": "REGION_TECH_TREE_SPIRITUALISM/SIMPLIFIED_FARMING",
+    "dlc": "BETTER_SAVE_SOUL",
+    "locations": [
+      "Simplified Farming - Unlock 1",
+      "Simplified Farming - Unlock 2",
+      "Simplified Farming - Unlock 3"
+    ],
+    "parents": [
+      "soul_sins_3"
+    ]
+  },
+  "soul_marble_statues": {
+    "region": "REGION_TECH_TREE_SPIRITUALISM/MARBLE_GRAVESTONES",
+    "dlc": "BETTER_SAVE_SOUL",
+    "locations": [
+      "Marble Gravestones (Spiritualism) - Unlock 1 (Spiritualism)",
+      "Marble Gravestones (Spiritualism) - Unlock 2 (Spiritualism)",
+      "Marble Gravestones (Spiritualism) - Unlock 3 (Spiritualism)"
+    ],
+    "parents": [
+      "soul_stone_statues"
+    ]
+  },
+  "soul_sins_4": {
+    "region": "REGION_TECH_TREE_SPIRITUALISM/PROFESSIONAL_HEALER",
+    "dlc": "BETTER_SAVE_SOUL",
+    "locations": [
+      "Professional Healer - Unlock 1",
+      "Professional Healer - Unlock 2",
+      "Professional Healer - Unlock 3"
+    ],
+    "parents": [
+      "soul_buildings_2"
+    ]
+  }
+}
