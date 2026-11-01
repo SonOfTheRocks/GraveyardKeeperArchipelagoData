@@ -10,6 +10,7 @@ SHARED_DATA_FILES = {
     "item_grants.json",
     "locations.json",
     "quest_reward_triggers.json",
+    "technologies.json",
 }
 SHARED_DATA_DIRECTORIES = ("items/",)
 

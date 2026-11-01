@@ -15,12 +15,14 @@ GRANT_FIELDS = {
     "progressive_work_unlock": {"stages"}, "perk_unlock": {"perk_id", "craft_ids", "work_ids"},
     "permanent_buff": {"buff_id", "resource_types", "icon"}, "relation": {"npc_id", "amount"},
     "research_points": {"color", "amount"}, "technology_unlock": {"technology_ids"},
-    "flow_script": {"script_id"},
+    "flow_script": {"script_id"}, "trap": {"trap_id"},
 }
 TRIGGER_FIELDS = {
-    "flow_quest_reward": ({"graph", "node_id"}, {"answer_index"}),
-    "flow_relation_reward": ({"graph", "node_id"}, {"answer_index"}),
-    "craft_reward": ({"craft_id"}, set()), "technology_reward": ({"technology_id"}, set()),
+    "flow_quest_reward": ({"graph", "node_id", "runtime_node_id"}, {"answer_index"}),
+    "flow_relation_reward": ({"graph", "node_id", "runtime_node_id"}, {"answer_index"}),
+    "craft_completion_reward": ({"craft_id"}, set()),
+    "craft_unlock_reward": ({"craft_id"}, set()),
+    "technology_reward": ({"technology_id"}, set()),
     "world_item_reward": ({"item_id"}, set()),
 }
 
@@ -57,7 +59,7 @@ def _validate_grant(value: Any, context: str) -> None:
     grant_type = value.get("type")
     _require(grant_type in GRANT_FIELDS, f"{context}: unsupported type {grant_type!r}")
     _require(set(value) == {"type"} | GRANT_FIELDS[grant_type], f"{context}: invalid fields")
-    for field in ("item_id", "perk_id", "buff_id", "npc_id", "script_id"):
+    for field in ("item_id", "perk_id", "buff_id", "npc_id", "script_id", "trap_id"):
         if field in value:
             _string(value[field], f"{context}.{field}")
     for field in ("craft_ids", "work_ids", "perk_ids", "resource_types", "technology_ids"):
@@ -94,12 +96,19 @@ def load_and_validate(root: Path = ROOT) -> dict[str, Any]:
         _require(bool(re.fullmatch(r"ITEM_[A-Za-z0-9_]+", key)), f"{context}: invalid key")
         common = {"label", "dlc", "classification"}
         allowed = (common, common | {"amount"}, common | {"unlocks", "researches"})
-        _require(isinstance(item, dict) and set(item) in allowed, f"{context}: invalid fields")
+        _require(isinstance(item, dict) and (set(item) - {"id"}) in allowed, f"{context}: invalid fields")
+        if "id" in item:
+            _require(type(item["id"]) is int and item["id"] > 0, f"{context}.id: expected a positive integer")
+        if item["classification"] == "TRAP":
+            _require("id" in item, f"{context}: trap IDs must be explicit")
         _string(item["label"], f"{context}.label")
         _require(item["label"] not in labels, f"{context}.label: duplicate network name")
         labels.add(item["label"])
         _require(item["dlc"] in DLCS, f"{context}.dlc: unsupported DLC")
         _require(item["classification"] in CLASSIFICATIONS, f"{context}.classification: unsupported classification")
+        if key.startswith(("ITEM_BP_", "ITEM_LEARN_")):
+            _require(item["classification"] in {"FILLER", "USEFUL"},
+                     f"{context}.classification: recipe progression is determined by the APWorld")
         _require(isinstance(item.get("amount", 1), int) and item.get("amount", 1) > 0, f"{context}.amount: expected a positive integer")
         if "unlocks" in item:
             _string_list(item["unlocks"], f"{context}.unlocks")
@@ -109,6 +118,18 @@ def load_and_validate(root: Path = ROOT) -> dict[str, Any]:
     _require(set(grants) == set(items), "item_grants: keys must exactly match item definitions")
     for key, grant in grants.items():
         _validate_grant(grant, f"item_grants.{key}")
+
+    explicit_ids = [item["id"] for item in items.values() if "id" in item]
+    _require(len(explicit_ids) == len(set(explicit_ids)), "items: duplicate explicit IDs")
+    legacy_count = sum("id" not in item for item in items.values())
+    _require(not set(explicit_ids).intersection(range(1, legacy_count + 1)),
+             "items: explicit IDs overlap reserved legacy IDs")
+    for key, grant in grants.items():
+        if grant["type"] == "trap":
+            _require(items[key]["classification"] == "TRAP", f"{key}: trap grants require TRAP classification")
+            _require(grant["trap_id"] in {"bats", "green_slimes"}, f"{key}: unsupported trap_id")
+        if items[key]["classification"] == "TRAP":
+            _require(grant["type"] == "trap", f"{key}: TRAP items require a trap grant")
 
     locations = _load(root / "locations.json")
     location_labels: set[str] = set()
@@ -132,15 +153,51 @@ def load_and_validate(root: Path = ROOT) -> dict[str, Any]:
             _require(trigger_type in TRIGGER_FIELDS, f"{context}: unsupported type {trigger_type!r}")
             required, optional = TRIGGER_FIELDS[trigger_type]
             _require({"type"} | required <= set(trigger) <= {"type"} | required | optional, f"{context}: invalid fields")
-            for field in required:
+            for field in required - {"runtime_node_id"}:
                 _string(trigger[field], f"{context}.{field}")
+            if "runtime_node_id" in trigger:
+                _require(isinstance(trigger["runtime_node_id"], int) and trigger["runtime_node_id"] > 0,
+                         f"{context}.runtime_node_id: expected a positive integer")
             if "answer_index" in trigger:
                 _require(isinstance(trigger["answer_index"], int) and trigger["answer_index"] >= 0, f"{context}.answer_index: expected a non-negative integer")
             serialized = json.dumps(trigger, sort_keys=True, separators=(",", ":"))
             _require(serialized not in seen, f"{context}: duplicate trigger")
             seen.add(serialized)
 
-    return {"manifest": manifest, "items": items, "grants": grants, "locations": locations, "triggers": triggers}
+    technologies = _load(root / "technologies.json")
+    _require(isinstance(technologies, dict) and bool(technologies), "technologies: expected a nonempty mapping")
+    technology_locations: set[str] = set()
+    technology_regions: set[str] = set()
+    recipe_items: set[str] = set()
+    for game_id, technology in technologies.items():
+        context = f"technologies.{game_id}"
+        _string(game_id, context)
+        _require(isinstance(technology, dict) and {"region", "dlc", "locations", "parents"} <= set(technology) and
+                 set(technology) <= {"region", "dlc", "locations", "parents", "recipe_item", "quest_reward"},
+                 f"{context}: invalid fields")
+        _string(technology["region"], f"{context}.region")
+        _require(technology["region"] not in technology_regions, f"{context}: duplicate research region")
+        technology_regions.add(technology["region"])
+        _require(technology["dlc"] in DLCS, f"{context}.dlc: unsupported DLC")
+        _string_list(technology["locations"], f"{context}.locations")
+        _require(len(technology["locations"]) == 3, f"{context}: expected three existing research checks")
+        _string_list(technology["parents"], f"{context}.parents")
+        _require(set(technology["parents"]) <= set(technologies), f"{context}: unknown parent technology")
+        _require(game_id not in technology["parents"], f"{context}: technology cannot be its own parent")
+        _require(not ("recipe_item" in technology and "quest_reward" in technology),
+                 f"{context}: ambiguous reward source")
+        if "recipe_item" in technology:
+            _string(technology["recipe_item"], f"{context}.recipe_item")
+            _require(technology["recipe_item"] not in recipe_items, f"{context}: duplicate recipe item")
+            recipe_items.add(technology["recipe_item"])
+        if "quest_reward" in technology:
+            _require(technology["quest_reward"] in location_labels, f"{context}: unknown quest reward location")
+        for location in technology["locations"]:
+            _require(location not in technology_locations, f"{context}: duplicate technology location")
+            technology_locations.add(location)
+
+    return {"manifest": manifest, "items": items, "grants": grants, "locations": locations, "triggers": triggers,
+            "technologies": technologies}
 
 
 def main() -> int:
