@@ -16,6 +16,8 @@ jobs:
           python-version: "3.11"
       - run: python validate_data.py
       - run: python -m unittest discover -s tests -t .
+      - name: Test package-relative imports used by nested checkouts
+        run: python -m unittest discover -s tests -t ..
       - name: Require a data version bump for runtime data changes
         if: github.event_name == 'pull_request'
         run: python check_data_version.py "origin/${{ github.base_ref }}"

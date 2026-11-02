@@ -1,7 +1,11 @@
 import unittest
 from unittest.mock import patch
 
-from validate_data import DataValidationError, _load, load_and_validate
+from . import validation
+
+DataValidationError = validation.DataValidationError
+_load = validation._load
+load_and_validate = validation.load_and_validate
 
 
 class TestTraps(unittest.TestCase):
@@ -52,7 +56,7 @@ class TestTraps(unittest.TestCase):
                         result["ITEM_BATS_TRAP"] = {"type": "game_item", "item_id": "stone"}
                 return result
 
-            with self.subTest(change=change), patch("validate_data._load", side_effect=load_changed):
+            with self.subTest(change=change), patch.object(validation, "_load", side_effect=load_changed):
                 with self.assertRaisesRegex(DataValidationError, message):
                     load_and_validate()
 
@@ -63,5 +67,5 @@ class TestTraps(unittest.TestCase):
                 result["ITEM_BATS_TRAP"]["id"] = 487
             return result
 
-        with patch("validate_data._load", side_effect=use_available_id):
+        with patch.object(validation, "_load", side_effect=use_available_id):
             self.assertEqual(487, load_and_validate()["items"]["ITEM_BATS_TRAP"]["id"])
