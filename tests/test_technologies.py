@@ -4,7 +4,11 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from validate_data import ROOT, DataValidationError, load_and_validate
+from . import validation
+
+ROOT = validation.ROOT
+DataValidationError = validation.DataValidationError
+load_and_validate = validation.load_and_validate
 
 
 class TestTechnologies(unittest.TestCase):

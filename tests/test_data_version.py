@@ -1,10 +1,10 @@
 import unittest
 
-from check_data_version import (
-    DataVersionError,
-    requires_data_version_bump,
-    validate_data_version_change,
-)
+from . import version_check
+
+DataVersionError = version_check.DataVersionError
+requires_data_version_bump = version_check.requires_data_version_bump
+validate_data_version_change = version_check.validate_data_version_change
 
 
 class TestDataVersion(unittest.TestCase):
@@ -32,6 +32,8 @@ class TestDataVersion(unittest.TestCase):
             "schemas/shared-data.schema.json",
             "tests/test_data.py",
             "validate_data.py",
+            "__init__.py",
+            "tests/__init__.py",
         ]
         self.assertFalse(requires_data_version_bump(paths))
         validate_data_version_change(4, 4, paths)

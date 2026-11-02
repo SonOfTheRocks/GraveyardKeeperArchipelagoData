@@ -3,7 +3,12 @@ import unittest
 
 from unittest.mock import patch
 
-from validate_data import ROOT, DataValidationError, _load, load_and_validate
+from . import validation
+
+ROOT = validation.ROOT
+DataValidationError = validation.DataValidationError
+_load = validation._load
+load_and_validate = validation.load_and_validate
 
 
 class TestSharedData(unittest.TestCase):
@@ -19,7 +24,7 @@ class TestSharedData(unittest.TestCase):
                 result["ITEM_LEARN_CREATE_ROOF_TILE"]["classification"] = "PROGRESSION"
             return result
 
-        with patch("validate_data._load", side_effect=load_with_static_progression):
+        with patch.object(validation, "_load", side_effect=load_with_static_progression):
             with self.assertRaisesRegex(DataValidationError, "recipe progression is determined by the APWorld"):
                 load_and_validate()
 
