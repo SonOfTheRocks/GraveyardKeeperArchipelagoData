@@ -27,6 +27,6 @@
   "ITEM_BP_CRATE_FACTORY": {
     "label": "Blueprint: Crate factory",
     "dlc": "BASE_GAME",
-    "classification": "PROGRESSION"
+    "classification": "FILLER"
   }
 }

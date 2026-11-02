@@ -1452,10 +1452,10 @@
   },
   "ITEM_LEARN_GATHERING_LIMESTONE": {
     "type": "work_unlock",
-    "work_ids": [
+    "work_ids": [],
+    "perk_ids": [
       "p_t_lifestone"
-    ],
-    "perk_ids": []
+    ]
   },
   "ITEM_LEARN_GATHERING_BIG_MARBLE_ROCK": {
     "type": "work_unlock",
@@ -3220,5 +3220,13 @@
     "technology_ids": [
       "soul_sins_1"
     ]
+  },
+  "ITEM_BATS_TRAP": {
+    "type": "trap",
+    "trap_id": "bats"
+  },
+  "ITEM_GREEN_SLIME_TRAP": {
+    "type": "trap",
+    "trap_id": "green_slimes"
   }
 }
