@@ -31,8 +31,7 @@ for seed-specific presentation; item grants, names and stage order are unchanged
 ## Traps and stable IDs
 
 Trap items declare `TRAP`, an explicit positive `id`, and a `trap` grant. Currently
-supported IDs are `bats` and `green_slimes`. `Bats Trap` uses 488 and `Green Slime Trap`
-uses 489. The general random trap was removed before the first release, with no
+supported IDs are `bats` and `green_slimes`. The APWorld owns network item IDs. The general random trap was removed before the first release, with no
 compatibility path or ID reservation. Explicit IDs cannot overlap the legacy IDs or
 each other. The existing 486 items retain their historical implicit IDs;
 explicit-ID additions do not advance the legacy counter.

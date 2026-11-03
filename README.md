@@ -10,15 +10,15 @@ Graveyard Keeper APWorld and the GraveyardKeepelago client.
 - `technologies.json`: native technology IDs, native parents, actual research checks and reward sources;
 - `manifest.json`: the explicit compatibility `data_version`.
 
-Data version 8 contains only the specific `Bats Trap` (AP ID 488, grant `trap_id: bats`) and
-`Green Slime Trap` (AP ID 489, grant `trap_id: green_slimes`), both classified
+Data version 9 contains only the specific `Bats Trap` (grant `trap_id: bats`) and
+`Green Slime Trap` (grant `trap_id: green_slimes`), both classified
 `TRAP`. The optional `trap_percentage` replaces filler; relative weights
 `bats_trap_weight` and `green_slime_trap_weight` choose the item during generation.
 The client queues that exact type and spawns four of its monsters during normal
 gameplay. Main icons show the monster; the quality corner shows a skull. Foreign
 game previews retain the AP main icon. There is no general random monster trap
 or compatibility handler for it. This is an unreleased development project;
-ID 487 has no definition or reservation. Both consumers must use version 8.
+The APWorld owns the network item IDs. Both consumers must use version 9.
 There are 488 item definitions; local seeds from earlier data versions must be regenerated.
 
 Technology definitions contain only their actual research locations:

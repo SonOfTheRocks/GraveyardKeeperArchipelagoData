@@ -96,11 +96,7 @@ def load_and_validate(root: Path = ROOT) -> dict[str, Any]:
         _require(bool(re.fullmatch(r"ITEM_[A-Za-z0-9_]+", key)), f"{context}: invalid key")
         common = {"label", "dlc", "classification"}
         allowed = (common, common | {"amount"}, common | {"unlocks", "researches"})
-        _require(isinstance(item, dict) and (set(item) - {"id"}) in allowed, f"{context}: invalid fields")
-        if "id" in item:
-            _require(type(item["id"]) is int and item["id"] > 0, f"{context}.id: expected a positive integer")
-        if item["classification"] == "TRAP":
-            _require("id" in item, f"{context}: trap IDs must be explicit")
+        _require(isinstance(item, dict) and set(item) in allowed, f"{context}: invalid fields")
         _string(item["label"], f"{context}.label")
         _require(item["label"] not in labels, f"{context}.label: duplicate network name")
         labels.add(item["label"])
@@ -119,11 +115,6 @@ def load_and_validate(root: Path = ROOT) -> dict[str, Any]:
     for key, grant in grants.items():
         _validate_grant(grant, f"item_grants.{key}")
 
-    explicit_ids = [item["id"] for item in items.values() if "id" in item]
-    _require(len(explicit_ids) == len(set(explicit_ids)), "items: duplicate explicit IDs")
-    legacy_count = sum("id" not in item for item in items.values())
-    _require(not set(explicit_ids).intersection(range(1, legacy_count + 1)),
-             "items: explicit IDs overlap reserved legacy IDs")
     for key, grant in grants.items():
         if grant["type"] == "trap":
             _require(items[key]["classification"] == "TRAP", f"{key}: trap grants require TRAP classification")
