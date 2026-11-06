@@ -13,7 +13,7 @@ Graveyard Keeper APWorld and the GraveyardKeepelago client.
 Data version 9 contains only the specific `Bats Trap` (grant `trap_id: bats`) and
 `Green Slime Trap` (grant `trap_id: green_slimes`), both classified
 `TRAP`. The optional `trap_percentage` replaces filler; relative weights
-`bats_trap_weight` and `green_slime_trap_weight` choose the item during generation.
+in the APWorld's `trap_weights` mapping choose the item during generation.
 The client queues that exact type and spawns four of its monsters during normal
 gameplay. Main icons show the monster; the quality corner shows a skull. Foreign
 game previews retain the AP main icon. There is no general random monster trap
